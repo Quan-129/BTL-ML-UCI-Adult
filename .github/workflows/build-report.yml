@@ -1,0 +1,70 @@
+name: Build report PDF and LaTeX ZIP
+
+on:
+  push:
+    paths:
+      - 'reports/latex/**'
+      - '.github/workflows/build-report.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-report
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XeLaTeX and PDF utilities
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends texlive-xetex texlive-latex-extra texlive-fonts-recommended fonts-texgyre poppler-utils
+      - name: Compile report
+        working-directory: reports/latex
+        run: |
+          for pass in 1 2 3; do
+            xelatex -interaction=nonstopmode -halt-on-error -file-line-error main.tex > compile-output.txt 2>&1 || { tail -100 compile-output.txt; exit 1; }
+          done
+          cp main.pdf ../BTL_ML_Bao_Cao.pdf
+          pdftotext -layout main.pdf report-text.txt
+      - name: Verify name and package source
+        shell: python
+        run: |
+          from pathlib import Path
+          import hashlib, json, subprocess, unicodedata, zipfile
+          root = Path("reports/latex")
+          name = "Đinh Ngụy Nguyệt Hà"
+          text = unicodedata.normalize("NFC", (root / "report-text.txt").read_text())
+          text = " ".join(text.split())
+          assert name in text, "Corrected name is missing from the PDF"
+          assert "Đinh Nguy Nguyệt Hà" not in text, "Old name remains in PDF"
+          pdf = Path("reports/BTL_ML_Bao_Cao.pdf")
+          assert 0 < pdf.stat().st_size < 10_000_000, "PDF exceeds submission size limit"
+          files = subprocess.check_output(["git", "ls-files", "-z", "reports/latex"], text=True).split("\0")
+          with zipfile.ZipFile("reports/BTL_ML_LaTeX_Final.zip", "w", zipfile.ZIP_DEFLATED) as archive:
+              for item in sorted(filter(None, files)):
+                  path = Path(item)
+                  archive.write(path, path.relative_to(root).as_posix())
+          manifest_path = Path("MANIFEST_SHA256.json")
+          manifest = json.loads(manifest_path.read_text())
+          for item in manifest:
+              path = Path(item)
+              if path.is_file():
+                  content = path.read_bytes()
+                  manifest[item] = {"bytes": len(content), "sha256": hashlib.sha256(content).hexdigest()}
+          manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
+          print(f"Verified PDF: {pdf.stat().st_size:,} bytes")
+      - name: Publish regenerated reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/BTL_ML_Bao_Cao.pdf reports/BTL_ML_LaTeX_Final.zip MANIFEST_SHA256.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Rebuild report PDF and LaTeX ZIP with corrected member name"
+            git push
+          fi
