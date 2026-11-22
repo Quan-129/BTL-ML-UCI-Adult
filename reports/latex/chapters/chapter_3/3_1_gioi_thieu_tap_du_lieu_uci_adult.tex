@@ -1,0 +1,23 @@
+\section{Giới thiệu tập dữ liệu UCI Adult}
+\label{sec:3_1}
+UCI Adult, còn được gọi là Census Income, là tập dữ liệu dạng bảng được trích từ cơ sở dữ liệu điều tra dân số Hoa Kỳ năm 1994. Bài toán là xác định thu nhập năm của một cá nhân có vượt 50.000 USD hay không dựa trên các thuộc tính được cung cấp~\cite{uci-adult}.
+
+Dữ liệu được lấy trực tiếp từ UCI Machine Learning Repository, không sử dụng các bản đã xử lý từ nguồn khác. Hai tệp dữ liệu gốc được giữ riêng trong bước chuẩn bị ban đầu.
+
+\begin{table}[htbp]
+\centering
+\caption{Quy mô dữ liệu gốc đã kiểm tra ở bước tải và đọc}
+\label{tab:original-data-size}
+\begin{tabular}{lrr}
+\toprule
+Tệp nguồn & Số mẫu & Số thuộc tính đầu vào \\
+\midrule
+\texttt{adult.data} & 32.561 & 14 \\
+\texttt{adult.test} & 16.281 & 14 \\
+\midrule
+Tổng cộng & 48.842 & 14 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Mỗi mẫu có thêm một nhãn thu nhập, nên bảng sau khi đọc có tổng cộng 15 cột. Các kích thước trên đã được đối chiếu bằng mã kiểm tra trên các tệp UCI gốc; đây chưa phải kích thước của các tập sau khi chia lại hoặc xử lý dữ liệu.

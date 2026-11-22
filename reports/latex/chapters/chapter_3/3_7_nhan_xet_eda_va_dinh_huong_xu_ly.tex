@@ -1,0 +1,12 @@
+\section{Nhận xét EDA và định hướng xử lý}
+\label{sec:3_7}
+Kết quả khảo sát định hướng các bước thực hiện tiếp theo như sau:
+\begin{itemize}
+  \item Giá trị thiếu nằm ở các biến phân loại. Pipeline sẽ cần cách điền thiếu phù hợp và chỉ fit cách điền trên train của từng lần chia.
+  \item Các nhóm hồ sơ trùng đầu vào cần được xét khi tổ chức train và validation. Bước EDA chưa loại trùng hoặc giải quyết các nhóm khác nhãn.
+  \item Sự chênh lệch số mẫu giữa hai nhãn cần được phản ánh trong cách chia tập và lựa chọn chỉ số đánh giá; bước này chưa áp dụng tái lấy mẫu hay trọng số lớp.
+  \item Các biến số có miền giá trị khác nhau và hai khoản vốn có nhiều giá trị bằng 0. Sẽ so sánh các lựa chọn chuẩn hóa; không tự loại điểm chỉ vì bị gắn cờ IQR.
+  \item Các biến phân loại có số mức khác nhau. Việc mã hóa và xử lý mức chưa thấy sẽ được cấu hình trong pipeline.
+\end{itemize}
+
+EDA này mô tả \texttt{adult.data} trước khi chia nội bộ. Sau khi chốt tập validation, các thống kê dùng để fit tiền xử lý và các kiểm tra phục vụ lựa chọn cấu hình phải được tính lại trên phần train tương ứng. Tập test vẫn dành cho đánh giá cuối, sau khi đã chốt các lựa chọn. Toàn bộ dòng dữ liệu gốc được giữ nguyên ở bước 2.

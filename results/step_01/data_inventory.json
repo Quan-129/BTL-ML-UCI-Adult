@@ -1,0 +1,79 @@
+{
+  "step": 1,
+  "source_page": "https://archive.ics.uci.edu/dataset/2/adult",
+  "download_url": "https://archive.ics.uci.edu/static/public/2/adult.zip",
+  "archive_sha256": "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb",
+  "train_shape": [
+    32561,
+    15
+  ],
+  "test_shape": [
+    16281,
+    15
+  ],
+  "feature_count": 14,
+  "target": "income",
+  "labels": [
+    "<=50K",
+    ">50K"
+  ],
+  "columns": [
+    "age",
+    "workclass",
+    "fnlwgt",
+    "education",
+    "education-num",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week",
+    "native-country",
+    "income"
+  ],
+  "numeric_columns": [
+    "age",
+    "fnlwgt",
+    "education-num",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week"
+  ],
+  "categorical_columns": [
+    "workclass",
+    "education",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native-country"
+  ],
+  "dtypes": {
+    "age": "Int64",
+    "workclass": "string",
+    "fnlwgt": "Int64",
+    "education": "string",
+    "education-num": "Int64",
+    "marital-status": "string",
+    "occupation": "string",
+    "relationship": "string",
+    "race": "string",
+    "sex": "string",
+    "capital-gain": "Int64",
+    "capital-loss": "Int64",
+    "hours-per-week": "Int64",
+    "native-country": "string",
+    "income": "string"
+  },
+  "changes": [
+    "strip_whitespace",
+    "recognize_question_mark_as_missing",
+    "remove_test_comment",
+    "normalize_test_label_suffix"
+  ],
+  "model_features_exported": false
+}

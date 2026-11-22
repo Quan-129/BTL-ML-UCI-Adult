@@ -1,0 +1,9 @@
+\section{Giao thức đánh giá và chỉ số lựa chọn}
+\label{sec:5_2}
+Giữ nguyên phân chia bước 3: train 26.049 mẫu, validation 6.512 mẫu và test UCI 16.281 mẫu. Bên trong train, áp dụng StratifiedGroupKFold với 3 fold, shuffle bật và random state bằng 42. Các bản ghi có cùng 14 thuộc tính đầu vào được giữ chung nhóm, kể cả trường hợp nhãn khác nhau~\cite{sklearn-sgkf}.
+
+F1 của lớp \texttt{>50K} là tiêu chí lựa chọn. Các chỉ số bổ sung gồm precision, recall, accuracy, macro-F1 và ROC-AUC. Chọn cấu hình có trung bình F1 CV cao nhất; khi bằng nhau ưu tiên độ lệch chuẩn nhỏ hơn, sau đó ID theo thứ tự chữ. Cấu hình có cảnh báo không hội tụ trong bất kỳ fold nào vẫn được báo cáo nhưng không được khóa làm mô hình cuối của họ.
+
+Tất cả bộ biến đổi được fit lại bên trong fold bằng raw train. Không dùng X đã fit tiền xử lý trên toàn bộ train để tính CV~\cite{sklearn-pitfalls}. Không resampling, không class weighting, không tối ưu ngưỡng. Dùng ngưỡng dự đoán mặc định: xác suất 0,5 hoặc decision score 0 cho LinearSVC.
+
+Lựa chọn chung và lựa chọn trong từng họ được khóa bằng CV trước khi tính validation. Validation là đối chiếu mô tả; không chọn lại theo F1 validation. Điểm CV của cấu hình thắng là điểm phục vụ lựa chọn trong một tìm kiếm giới hạn, không phải ước lượng không thiên lệch cho hiệu quả cuối cùng.

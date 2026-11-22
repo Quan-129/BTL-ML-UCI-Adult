@@ -1,0 +1,31 @@
+{
+  "cv_manifest_sha256": "e5e75d9a0a2e14514c18f2e441f799e22a0064942d581ed14428f4c6deda051e",
+  "candidates_sha256": "7bb6b7a55ed5a93284008785d3e7aed19e3ee73ed94f82aac1edeb310d67e1d4",
+  "training_data_sha256": "468656037c77bcc3b0b1b269d4d1fda747a0893620c3c9ba631a31623257518d",
+  "selection_metric": "f1_mean",
+  "tie_breakers": [
+    "f1_std ascending",
+    "candidate_id ascending"
+  ],
+  "winner_id": "mlp_32_reg",
+  "family_winners": {
+    "LinearSVC": "svm_c1",
+    "LogisticRegression": "lr_missing_constant",
+    "MLP": "mlp_32_reg",
+    "RandomForest": "rf_full_leaf3"
+  },
+  "convergence_policy": "Candidates with any convergence warning are reported but excluded from locking.",
+  "validation_used_for_selection": false,
+  "test_accessed_by_experiment": false,
+  "versions": {
+    "python": "3.14.2",
+    "sklearn": "1.9.0",
+    "numpy": "2.4.4",
+    "pandas": "3.0.5",
+    "joblib": "1.5.3"
+  },
+  "candidate_count": 20,
+  "fold_count": 3,
+  "cv_fit_count": 60,
+  "note": "CV mean selected from this search is not an unbiased final performance estimate."
+}

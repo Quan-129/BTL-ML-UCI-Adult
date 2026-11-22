@@ -1,0 +1,53 @@
+{
+  "config": {
+    "numeric_imputation": "median",
+    "categorical_imputation": "most_frequent",
+    "missing_token": "__MISSING__",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "feature_range": [
+      0.0,
+      1.0
+    ],
+    "pca_variance": 0.95
+  },
+  "feature_count": 31,
+  "fit_split": "train",
+  "fit_audit": {
+    "fit_rows": 26049,
+    "numeric_imputer_matches_train": true,
+    "numeric_scaler_matches_train": true,
+    "encoder_categories_match_train": true,
+    "pca_samples_match_train": true
+  },
+  "transform_did_not_change_fitted_state": true,
+  "pca_retained_variance": 0.9511720987422719,
+  "arrays": {
+    "features/pca_95/X_train.npy": {
+      "shape": [
+        26049,
+        31
+      ],
+      "dtype": "float32",
+      "sha256": "aed65df847ba0556d13af57ade2435b8877fbefc3a05cc0fab8b3a9de6ce4c31"
+    },
+    "features/pca_95/X_validation.npy": {
+      "shape": [
+        6512,
+        31
+      ],
+      "dtype": "float32",
+      "sha256": "9b2cdb5154e7d9ea0e9c882e86f2695e8673c57f40540e33195020a667695fba"
+    },
+    "features/pca_95/X_test.npy": {
+      "shape": [
+        16281,
+        31
+      ],
+      "dtype": "float32",
+      "sha256": "9d4e70ad8fc930c168bdc64d8eb78cc7fdac1c3cd88a0c04761839a03a784766"
+    }
+  },
+  "pipeline_path": "artifacts/preprocessors/pca_95.joblib",
+  "feature_names_path": "features/pca_95/feature_names.json"
+}

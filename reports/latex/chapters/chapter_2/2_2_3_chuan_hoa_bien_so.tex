@@ -1,0 +1,13 @@
+\subsection{Chuẩn hóa biến số}
+\label{subsec:2_2_3}
+Standard scaling biến đổi một biến theo công thức
+\begin{equation}
+z=\frac{x-\mu_{\mathrm{train}}}{\sigma_{\mathrm{train}}},
+\end{equation}
+trong đó trung bình và độ lệch chuẩn được ước lượng trên train sau khi điền thiếu. Trong scikit-learn, độ lệch chuẩn dùng phương sai với mẫu số $n$. Với cột hằng, thư viện xử lý hệ số tỷ lệ để tránh chia cho 0.
+
+Min-max scaling ánh xạ dựa trên hai cực trị train vào khoảng cấu hình $[a,b]$:
+\begin{equation}
+z=a+\frac{x-x_{\min,\mathrm{train}}}{x_{\max,\mathrm{train}}-x_{\min,\mathrm{train}}}(b-a).
+\end{equation}
+Khi không bật clipping, một giá trị validation hoặc test nằm ngoài miền train có thể cho kết quả ngoài $[a,b]$~\cite{sklearn-preprocessing}. Đây không phải lỗi tính toán. Trong đề tài, scaling chỉ áp dụng cho nhánh sáu biến số; các cột one-hot giữ giá trị chỉ báo 0/1.

@@ -1,0 +1,9 @@
+# Direct dependencies used for local validation; Python 3.14.2
+numpy==2.4.4
+pandas==3.0.5
+scikit-learn==1.9.0
+matplotlib==3.10.8
+joblib==1.5.3
+requests==2.34.2
+threadpoolctl==3.6.0
+reportlab==5.0.1

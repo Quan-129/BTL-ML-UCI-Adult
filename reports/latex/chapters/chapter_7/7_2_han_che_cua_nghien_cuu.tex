@@ -1,0 +1,11 @@
+\section{Hạn chế của nghiên cứu}
+\label{sec:7_2}
+\begin{itemize}
+\item \textbf{Phạm vi tìm kiếm:} sử dụng ba fold, một seed và lưới siêu tham số nhỏ, không đồng đều giữa các họ. Hai cấu hình MLP được thêm sau khi xem cảnh báo hội tụ của pilot; quá trình này được công khai và chưa sử dụng validation/test. F1 CV thắng cuộc vẫn là số liệu phục vụ lựa chọn, không phải ước lượng hiệu quả cuối không thiên lệch.
+\item \textbf{Phân chia và trùng hồ sơ:} train/validation không chung nhóm 14 thuộc tính; tuy nhiên, giữ nguyên test UCI dẫn đến 22 dòng test trùng hồ sơ train và 4 dòng trùng hồ sơ validation. Vì vậy không khẳng định phân chia test tách biệt tuyệt đối về hồ sơ. Không loại các dòng này sau khi nhìn kết quả.
+\item \textbf{Vai trò EDA/validation:} EDA được thực hiện trên toàn bộ \texttt{adult.data} trước khi tách train/validation. Validation chỉ là đối chiếu mô tả trong dữ liệu phát triển, không được trình bày như một tập hoàn toàn chưa từng được khảo sát. Các thống kê imputer/scaler/PCA vẫn chỉ fit từ phần train tương ứng.
+\item \textbf{Khả năng phát hiện lớp dương:} recall test bằng 62,48\%, còn 37,52\% mẫu dương bị bỏ sót tại ngưỡng đã khóa. Accuracy cao hơn không đồng nghĩa bài toán lớp thiểu số đã được giải quyết đầy đủ. Chưa khảo sát chi phí lỗi, class weighting hoặc resampling.
+\item \textbf{Phạm vi suy rộng:} Adult phản ánh một tập dữ liệu điều tra dân số Hoa Kỳ lịch sử. Kết quả chung không chứng minh khả năng áp dụng cho thời kỳ, quốc gia hoặc quần thể khác; chưa có đánh giá theo nhóm nhân khẩu hay kiểm tra hiệu chỉnh xác suất.
+\item \textbf{Tái lập:} kết quả có thể thay đổi khi phiên bản thư viện, phần cứng hoặc thuật toán thay đổi. Môi trường thực nghiệm, seed và snapshot mô hình được lưu kèm để đối chiếu khi thực hiện lại.
+\end{itemize}
+Tập test đã được sử dụng để đánh giá cuối. Báo cáo không tiếp tục dùng kết quả test này để điều chỉnh rồi gọi lần đo tiếp theo là đánh giá trên dữ liệu chưa thấy.

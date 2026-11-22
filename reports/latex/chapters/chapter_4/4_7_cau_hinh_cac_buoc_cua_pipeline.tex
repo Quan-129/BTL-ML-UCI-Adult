@@ -1,0 +1,22 @@
+\section{Cấu hình các bước của pipeline}
+\label{sec:4_7}
+Hàm \texttt{build\_preprocessor(config)} trả về một pipeline chưa fit. Các tham số được kiểm tra trước khi tạo đối tượng. Cấu hình được lưu trong \texttt{configs/preprocessing.json} và các manifest đầu ra.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Các lựa chọn tiền xử lý được hỗ trợ}\label{tab:preprocessing-options}
+\begin{tabular}{p{.31\textwidth}p{.57\textwidth}}
+\toprule
+Thành phần & Lựa chọn \\
+\midrule
+Điền thiếu biến số & median hoặc mean \\
+Điền thiếu phân loại & most\_frequent hoặc constant với hằng cấu hình \\
+Mã hóa & onehot hoặc ordinal \\
+Scaling nhánh số & standard, minmax hoặc none \\
+Khoảng MinMax & Hai cận tăng dần, mặc định $[0,1]$ \\
+PCA & Bỏ qua, giữ 90\% hoặc 95\% phương sai \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Ba bộ đặc trưng được xuất ở bước 4 là baseline, pca\_90 và pca\_95. Các đối chứng tiền xử lý và PCA đã thực hiện được mô tả ở chương 5 và chương 6; các lựa chọn chỉ được hỗ trợ nhưng chưa chạy không được gán một kết quả thực nghiệm. Khi cross-validation, phải tạo pipeline mới trong từng fold và dùng dữ liệu train thô cùng mã nhóm; không dùng trực tiếp các ma trận đã fit từ toàn bộ train để tính điểm CV~\cite{sklearn-pitfalls}.

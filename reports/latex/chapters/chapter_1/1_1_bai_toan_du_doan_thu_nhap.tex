@@ -1,0 +1,7 @@
+\section{Bài toán dự đoán thu nhập}
+\label{sec:1_1}
+Đề tài xây dựng một hệ thống học máy để phân loại mức thu nhập năm của một cá nhân dựa trên các thông tin được cung cấp trong tập dữ liệu UCI Adult. Đầu vào của hệ thống gồm các thuộc tính như tuổi, học vấn, nhóm công việc, nghề nghiệp và số giờ làm việc mỗi tuần. Đầu ra là một trong hai nhãn: \texttt{<=50K}, tương ứng với thu nhập năm không quá 50.000 USD, hoặc \texttt{>50K}, tương ứng với thu nhập năm trên 50.000 USD~\cite{uci-adult}.
+
+UCI Adult được trích từ cơ sở dữ liệu điều tra dân số Hoa Kỳ năm 1994 và chứa cả thuộc tính dạng số lẫn thuộc tính dạng phân loại. Một số thuộc tính có giá trị không xác định. Những đặc điểm này tạo điều kiện để thực hành các bước xử lý dữ liệu bảng trước khi huấn luyện mô hình, đặc biệt là điền giá trị thiếu, mã hóa biến phân loại và chuẩn hóa biến số.
+
+Trong bài tập lớn, nhóm tiếp cận bài toán theo hướng học có giám sát. Quy trình thực hiện đi từ tải và khảo sát dữ liệu, chuẩn bị đặc trưng, huấn luyện các mô hình đến đánh giá khả năng dự đoán trên dữ liệu chưa dùng để chọn cấu hình. Trọng tâm của đề tài là xây dựng một pipeline rõ ràng, có thể thay đổi cấu hình và có kết quả thực nghiệm để so sánh các lựa chọn xử lý cũng như mô hình.

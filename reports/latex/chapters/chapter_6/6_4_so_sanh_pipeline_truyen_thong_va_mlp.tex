@@ -1,0 +1,41 @@
+\section{So sánh pipeline truyền thống và MLP}
+\label{sec:6_4}
+Bảng sau tổng hợp cấu hình tốt nhất của từng họ trên toàn bộ các cấu hình đã khảo sát của họ đó. Với Logistic Regression, tập ứng viên này bao gồm cả các biến thể tiền xử lý/PCA; vì vậy bảng có thể khác mốc chỉ dùng tiền xử lý cơ sở ở mục 6.1.
+\begin{table}[htbp]
+\centering\scriptsize
+\caption{Cấu hình đã khóa trong từng họ theo F1 CV}\label{tab:cv-family-winners}
+\begin{tabular}{lrrrr}
+\toprule
+Cấu hình & F1 CV & SD & Precision & Recall \\
+\midrule
+svm\_c1 & 0,6514 & 0,0028 & 0,7375 & 0,5833 \\
+lr\_missing\_constant & 0,6586 & 0,0062 & 0,7350 & 0,5967 \\
+mlp\_32\_reg & 0,6814 & 0,0103 & 0,7317 & 0,6378 \\
+rf\_full\_leaf3 & 0,6782 & 0,0012 & 0,7756 & 0,6026 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[htbp]
+\centering\small
+\caption{Đối chiếu validation sau khi khóa bằng CV}\label{tab:validation-locked}
+\begin{tabular}{lrrr}
+\toprule
+Cấu hình & F1 & Precision & Recall \\
+\midrule
+svm\_c1 & 0,6524 & 0,7407 & 0,5829 \\
+lr\_missing\_constant & 0,6615 & 0,7313 & 0,6040 \\
+mlp\_32\_reg & 0,6748 & 0,7247 & 0,6314 \\
+rf\_full\_leaf3 & 0,6749 & 0,7608 & 0,6065 \\
+dummy\_majority & 0,0000 & 0,0000 & 0,0000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+Validation được tính sau khi khóa lựa chọn và không dùng để đổi cấu hình thắng. Hai nguồn điểm CV/validation phải được phân biệt; không chọn số lớn hơn giữa chúng để trình bày như điểm test. MLP được khảo sát trong phạm vi bốn cấu hình và một seed nên chưa thể khẳng định ưu thế tổng quát của mạng nơ-ron so với học máy truyền thống.
+
+% BEGIN REVIEW ANALYSIS
+MLP 32 nút hơn Random Forest 0,31 điểm phần trăm F1 CV; recall cao hơn 3,52 điểm phần trăm, nhưng precision thấp hơn 4,38 điểm phần trăm. Random Forest có accuracy 0,8623 và ROC-AUC 0,9161, đều cao hơn MLP; lựa chọn cuối vẫn theo F1 lớp dương đã định trước. Vì thế không có một mô hình đứng đầu trên mọi chỉ số.
+
+SD F1 của MLP là 0,0103, so với 0,0012 của Random Forest. SD qua ba fold không phải khoảng tin cậy; các fold dùng chung dữ liệu phát triển và kết quả chưa có kiểm định nhiều seed. Trên validation, F1 của hai mô hình chỉ lệch 0,010 điểm phần trăm. Các số liệu này ủng hộ cách diễn đạt MLP đạt F1 CV trung bình cao nhất trong phạm vi khảo sát, chưa chứng minh MLP tốt hơn một cách ổn định.
+
+Thời gian fit trung bình mỗi fold, tính cả pipeline tiền xử lý, là 0,96 giây cho MLP, 1,59 giây cho Random Forest và 0,24 giây cho Logistic Regression dùng nhóm thiếu riêng. Đây là số đo trên môi trường thực nghiệm được lưu, không phải benchmark độc lập hoặc bảo đảm tốc độ trên Colab. Kích thước dữ liệu, thư viện và phần cứng đều có thể làm thời gian thay đổi.
+% END REVIEW ANALYSIS

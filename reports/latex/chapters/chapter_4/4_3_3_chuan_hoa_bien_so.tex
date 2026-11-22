@@ -1,0 +1,5 @@
+\subsection{Chuẩn hóa biến số}
+\label{subsec:4_3_3}
+Nhánh số dùng StandardScaler trong cấu hình cơ sở. Có thể chuyển sang MinMaxScaler với \texttt{feature\_range} cấu hình được hoặc bỏ scaling. Việc chuẩn hóa diễn ra sau điền thiếu và chỉ áp dụng cho sáu biến số.
+
+MinMaxScaler không bật clipping; do đó các giá trị đánh giá nằm ngoài miền train vẫn được giữ đúng theo phép biến đổi đã fit. Chưa loại các điểm bị gắn cờ IQR ở EDA. Các quyết định về hiệu quả của từng cách chuẩn hóa được dành cho bước thí nghiệm mô hình.

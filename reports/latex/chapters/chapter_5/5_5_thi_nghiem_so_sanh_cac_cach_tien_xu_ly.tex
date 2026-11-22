@@ -1,0 +1,5 @@
+\section{Thí nghiệm so sánh các cách tiền xử lý}
+\label{sec:5_5}
+Giữ Logistic Regression $C=1$ và cùng các fold, thay đúng một lựa chọn so với cấu hình cơ sở: điền biến phân loại bằng nhóm \texttt{\_\_MISSING\_\_}; dùng ordinal thay one-hot; dùng MinMax [0,1] thay StandardScaler; hoặc dùng MinMax [-1,1]. Các thành phần còn lại giữ nguyên. Hai khoảng MinMax được ghi rõ để thể hiện khả năng cấu hình feature\_range.
+
+Không so sánh mean với median bằng điểm mô hình trong bước này vì các cột số gốc không thiếu. Chức năng chọn mean vẫn được hỗ trợ nhưng không gán cho nó một hiệu quả xử lý thiếu chưa quan sát. Các lựa chọn như không scaling, class weighting và resampling chưa được thực nghiệm.

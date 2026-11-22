@@ -1,0 +1,7 @@
+\section{Huấn luyện các mô hình truyền thống}
+\label{sec:4_5}
+Module \texttt{modules/training.py} tạo một pipeline gồm bộ tiền xử lý chưa fit và bộ phân loại. Logistic Regression, LinearSVC và Random Forest được huấn luyện trên raw train trong ba fold theo nhóm. Các file X đã xuất ở bước 4 không được dùng trực tiếp để tính CV.
+
+Trong mỗi fold, imputer, encoder, scaler và PCA chỉ fit trên phần train của fold, sau đó mới transform phần đánh giá. Các thống kê fitted được đối chiếu với phần train tương ứng. Số mẫu fit, số đặc trưng, thời gian, số vòng lặp và cảnh báo hội tụ được lưu lại. Mọi cấu hình dùng cùng các chỉ số fold đã khóa trong \texttt{results/step\_05/cv\_indices.json}.
+
+Sau khi hoàn tất CV, cấu hình tốt nhất trong từng họ được fit lại trên 26.049 dòng train và lưu cùng bộ tiền xử lý dưới dạng pipeline \texttt{.joblib}. Tập validation chỉ được dùng để đối chiếu các mô hình đã khóa; không huấn luyện lại bằng train cộng validation ở bước này.

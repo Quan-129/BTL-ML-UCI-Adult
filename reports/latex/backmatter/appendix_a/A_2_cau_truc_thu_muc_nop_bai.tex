@@ -1,0 +1,13 @@
+\section{Cấu trúc thư mục nộp bài}
+\label{sec:A_2}
+Gói tổng được tổ chức theo các thư mục sau:
+\begin{itemize}
+\item \texttt{notebooks/}: notebook chính \texttt{Adult\_BTL.ipynb} để mở trong Colab.
+\item \texttt{modules/}: tải dữ liệu, EDA, chia tập, tiền xử lý, CV, đánh giá, cập nhật và dàn trang báo cáo.
+\item \texttt{reports/}: PDF, nguồn \texttt{latex/} và ZIP LaTeX. Trong nguồn có \texttt{frontmatter/}, \texttt{chapters/}, \texttt{config/}, \texttt{backmatter/} và \texttt{Images/}; mỗi mục và tiểu mục có tệp riêng, thư mục hình phản ánh cùng cấu trúc.
+\item \texttt{features/}: X cơ sở/PCA, y, chỉ số dòng nguồn, tên đặc trưng và manifest.
+\item \texttt{data/}: ZIP UCI, các tệp nguồn, bảng đã đọc và train/validation/test cùng metadata.
+\item \texttt{configs/}: cấu hình tiền xử lý, thí nghiệm và phân công nhóm; \texttt{artifacts/}: các pipeline và snapshot cuối.
+\item \texttt{results/}: kết quả theo bước, bảng CSV, hình PDF/PNG và hồ sơ kiểm tra.
+\end{itemize}
+Tệp README ở thư mục gốc mô tả cách chạy và các giới hạn kiểm tra. Không cần mount Drive hoặc tải các module thủ công khi chạy notebook độc lập.

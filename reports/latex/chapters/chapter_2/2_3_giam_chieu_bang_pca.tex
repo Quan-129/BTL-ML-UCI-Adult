@@ -1,0 +1,9 @@
+\section{Giảm chiều bằng PCA}
+\label{sec:2_3}
+PCA là phương pháp giảm chiều không sử dụng nhãn, tìm các hướng trực giao giữ nhiều phương sai của dữ liệu. Với ma trận đặc trưng đã xử lý $X\in\mathbb{R}^{n\times d}$, đặt $X_c=X-\boldsymbol{\mu}$ và ma trận hiệp phương sai
+\begin{equation}
+S=\frac{1}{n-1}X_c^\top X_c.
+\end{equation}
+Các vector riêng của $S$ tương ứng với trị riêng giảm dần tạo nên những hướng thành phần chính. Chiếu lên $k$ hướng đầu cho biểu diễn $Z=X_cW_k$. Tỷ lệ phương sai được giữ lại là tổng các trị riêng được chọn chia cho tổng trị riêng.
+
+Pipeline cho phép chọn mức phương sai 90\% hoặc 95\%. Với \texttt{svd\_solver=full}, scikit-learn chọn số thành phần sao cho tổng tỷ lệ phương sai vượt mức yêu cầu~\cite{sklearn-pca}. PCA phải được fit trên train và tái sử dụng tâm cùng các hướng chiếu cho validation/test. Giữ nhiều phương sai hơn không tự bảo đảm chất lượng phân loại tốt hơn; điều đó phải được kiểm tra ở các thí nghiệm mô hình.

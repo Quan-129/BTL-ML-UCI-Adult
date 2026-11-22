@@ -1,0 +1,22 @@
+{
+  "identity": {
+    "test_data_sha256": "3d51bf429e119b916fd95371a55112fc18c0b6af4ee3a560d3e48a2919fa3948",
+    "test_source_ids_sha256": "20e92a2db2f048ffbc8684649bb07cc87c1f9018404dd5d9389fab8ecb9b68b1",
+    "selection_snapshot_sha256": "3c8c347792b70bc8da7f6a4885e3f650211bbb79f91330edfbb2583bed78d948",
+    "pipeline_sha256": "62a88d5517e33b030b098e82dc60aed5c2d86dfaa440b9b5f4fb536eae5c5065",
+    "evaluation_source_sha256": "4b51af00421768232d31d1a2cf351b8c144d07f2dbc764fcd39d521949607272",
+    "sklearn": "1.9.0",
+    "numpy": "2.4.4"
+  },
+  "evaluation_runs": 1,
+  "files": {
+    "results/step_06/test_predictions.csv": "4df4bfc4d604f85658aead85cf479edb4301611d75219069739bfe4da956121f",
+    "results/step_06/confusion_matrix.csv": "d91947e81500c72208ca3d567f4a2d87a3955da21aa6b8bf90432fc73758ede2",
+    "results/step_06/test_metrics.csv": "5960718b0c5b034401b8c73e8f9d9ab71996d8c8f8a9a7bc8538be1f4aa9fc8e",
+    "results/step_06/test_metrics.json": "3b16feb696aeaa5dcf5068060e97fdfcf194ed0cf8f9f5b76eba170463fade5f",
+    "results/step_06/classification_report.csv": "a0bb3498844612d6adf1522f8c9a6a79f31ad55dfa2db438909be0eda853109e",
+    "results/step_06/classification_report.json": "85634ec12834c66414a26d9737abe55ed2dd4e7f7ee060ba60115623e22c16fa",
+    "results/step_06/roc_curve.csv": "71037ca8b104697dc7c0c8d21aeb136b820133f79f08db61345bc60023aba70a",
+    "results/step_06/precision_recall_curve.csv": "35b9e4cfba2c6e5a46083925a89e6bf7c5375c27c87d54c8a46221bd8d3657af"
+  }
+}

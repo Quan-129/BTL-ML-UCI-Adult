@@ -1,0 +1,5 @@
+\subsection{Support Vector Machine}
+\label{subsec:2_4_2}
+SVM tuyến tính tìm một siêu phẳng phân tách các lớp. Với nhãn quy đổi $t_i\in\{-1,+1\}$ và $f(\mathbf{x})=\mathbf{w}^{T}\mathbf{x}+b$, mất mát squared hinge có dạng $\max(0,1-t_i f(\mathbf{x}_i))^2$. Thành phần phạt L2 kiểm soát độ lớn tham số, còn $C$ điều chỉnh sự đánh đổi giữa phạt và sai số trên dữ liệu huấn luyện.
+
+Bài làm sử dụng \texttt{LinearSVC}, không thử kernel RBF. Vì số mẫu lớn hơn số đặc trưng, bộ giải được cấu hình \texttt{dual=False}. Khảo sát $C\in\{0{,}1;1;10\}$ trên cùng các fold. Dự đoán nhãn dùng dấu của decision score, còn ROC-AUC dùng trực tiếp decision score; các điểm này không được gọi là xác suất~\cite{sklearn-linearsvc}.

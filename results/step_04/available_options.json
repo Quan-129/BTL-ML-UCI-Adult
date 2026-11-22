@@ -1,0 +1,25 @@
+{
+  "numeric_imputation": [
+    "median",
+    "mean"
+  ],
+  "categorical_imputation": [
+    "most_frequent",
+    "constant"
+  ],
+  "encoding": [
+    "onehot",
+    "ordinal"
+  ],
+  "scaling": [
+    "standard",
+    "minmax",
+    "none"
+  ],
+  "feature_range": "[lower, upper], used for minmax",
+  "pca_variance": [
+    null,
+    0.9,
+    0.95
+  ]
+}

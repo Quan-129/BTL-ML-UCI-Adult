@@ -1,0 +1,842 @@
+[
+  {
+    "candidate_id": "dummy_majority",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "dummy_majority",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "dummy_majority",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_c01",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      83
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_c01",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      79
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_c01",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      77
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_c1",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      198
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_c1",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      191
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_c1",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      181
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_c10",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      324
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_c10",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      269
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_c10",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      235
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "svm_c01",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 8,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "svm_c01",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 8,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "svm_c01",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 8,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "svm_c1",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 11,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "svm_c1",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 10,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "svm_c1",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 9,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "svm_c10",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 12,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "svm_c10",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 12,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "svm_c10",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 9,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "rf_full_leaf1",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "rf_full_leaf1",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "rf_full_leaf1",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "rf_full_leaf3",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "rf_full_leaf3",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "rf_full_leaf3",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "rf_depth20_leaf3",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "rf_depth20_leaf3",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "rf_depth20_leaf3",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "mlp_64",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [
+      {
+        "type": "ConvergenceWarning",
+        "message": "Stochastic Optimizer: Maximum iterations (300) reached and the optimization hasn't converged yet."
+      }
+    ],
+    "model_n_iter": 300,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "mlp_64",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [
+      {
+        "type": "ConvergenceWarning",
+        "message": "Stochastic Optimizer: Maximum iterations (300) reached and the optimization hasn't converged yet."
+      }
+    ],
+    "model_n_iter": 300,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "mlp_64",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [
+      {
+        "type": "ConvergenceWarning",
+        "message": "Stochastic Optimizer: Maximum iterations (300) reached and the optimization hasn't converged yet."
+      }
+    ],
+    "model_n_iter": 300,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "mlp_64_32",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [
+      {
+        "type": "ConvergenceWarning",
+        "message": "Stochastic Optimizer: Maximum iterations (300) reached and the optimization hasn't converged yet."
+      }
+    ],
+    "model_n_iter": 300,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "mlp_64_32",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [
+      {
+        "type": "ConvergenceWarning",
+        "message": "Stochastic Optimizer: Maximum iterations (300) reached and the optimization hasn't converged yet."
+      }
+    ],
+    "model_n_iter": 300,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "mlp_64_32",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [
+      {
+        "type": "ConvergenceWarning",
+        "message": "Stochastic Optimizer: Maximum iterations (300) reached and the optimization hasn't converged yet."
+      }
+    ],
+    "model_n_iter": 300,
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_missing_constant",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      205
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_missing_constant",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      192
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_missing_constant",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      185
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_ordinal",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      132
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_ordinal",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      132
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_ordinal",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      140
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_minmax01",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      168
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_minmax01",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      137
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_minmax01",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      161
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_minmax11",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      185
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_minmax11",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      194
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_minmax11",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      153
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_pca90",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": true
+    },
+    "warnings": [],
+    "model_n_iter": [
+      27
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_pca90",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": true
+    },
+    "warnings": [],
+    "model_n_iter": [
+      25
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_pca90",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": true
+    },
+    "warnings": [],
+    "model_n_iter": [
+      23
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_pca95",
+    "fold": 0,
+    "fit_audit": {
+      "fit_rows": 17366,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": true
+    },
+    "warnings": [],
+    "model_n_iter": [
+      28
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_pca95",
+    "fold": 1,
+    "fit_audit": {
+      "fit_rows": 17365,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": true
+    },
+    "warnings": [],
+    "model_n_iter": [
+      33
+    ],
+    "prediction_state_unchanged": true
+  },
+  {
+    "candidate_id": "lr_pca95",
+    "fold": 2,
+    "fit_audit": {
+      "fit_rows": 17367,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": true
+    },
+    "warnings": [],
+    "model_n_iter": [
+      35
+    ],
+    "prediction_state_unchanged": true
+  }
+]

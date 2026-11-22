@@ -1,0 +1,26 @@
+{
+  "step": 1,
+  "status": "passed",
+  "checks": [
+    "Hai tập gốc có đúng kích thước, thứ tự cột và hai nhãn hợp lệ.",
+    "Đã so sánh mọi ô của 48.842 mẫu với tệp thô; không xóa hoặc đổi thứ tự dòng.",
+    "Nhánh tải HTTP được kiểm tra bằng phản hồi mô phỏng chứa ZIP UCI thật; nhánh cache không gọi mạng.",
+    "Cả 6 ô Python trong notebook đã chạy cục bộ, có output và không có lỗi.",
+    "ZIP LaTeX có logo PDF 1.4 hợp lệ; đường dẫn và nhãn đã kiểm tra tĩnh, chưa biên dịch PDF."
+  ],
+  "pandas_version": "3.0.6",
+  "requests_version": "2.34.2",
+  "notebook_code_cells_executed": 6,
+  "train_shape": [
+    32561,
+    15
+  ],
+  "test_shape": [
+    16281,
+    15
+  ],
+  "validation_environment": "local Python; official UCI ZIP downloaded through browser",
+  "colab_service_run_verified": false,
+  "latex_compilation_verified": false,
+  "feature_matrices_created": false
+}

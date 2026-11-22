@@ -1,0 +1,10 @@
+\chapter*{Tóm tắt}
+\phantomsection
+\addcontentsline{toc}{chapter}{Tóm tắt}
+Báo cáo xây dựng một pipeline học máy có thể cấu hình cho bài toán dự đoán thu nhập năm trên 50.000 USD từ dữ liệu bảng UCI Adult. Hai tệp gốc gồm 32.561 mẫu phát triển và 16.281 mẫu test, với 14 thuộc tính đầu vào. Tập phát triển được chia theo nhóm hồ sơ thành 26.049 mẫu train và 6.512 mẫu validation. Pipeline kết hợp điền thiếu, mã hóa biến phân loại, chuẩn hóa biến số, PCA tùy chọn và bộ phân loại; mọi phép biến đổi học tham số được fit đúng phần train tương ứng.
+
+Vòng so sánh cuối khảo sát 20 cấu hình bằng cross-validation ba fold theo nhóm, gồm Logistic Regression, SVM tuyến tính, Random Forest, MLP và mốc dự đoán đa số. Hai cấu hình MLP được bổ sung sau pilot do cảnh báo tối ưu; toàn bộ dấu vết pilot và kết quả sau mở rộng được giữ lại. Tiêu chí lựa chọn là F1 của lớp \texttt{>50K}, trước khi đối chiếu validation. Cấu hình được khóa là MLP một lớp ẩn 32 nút, không PCA và ngưỡng xác suất 0,5.
+
+Mô hình đạt F1 CV trung bình 0,6814, F1 validation 0,6748 và F1 test 0,6715. Trên test, accuracy đạt 85,56\%, precision 72,58\%, recall 62,48\% và ROC-AUC 0,9093. Kết quả cho thấy cần đọc accuracy cùng khả năng phát hiện lớp thu nhập cao. Giới hạn gồm lưới tham số nhỏ, một seed, ba fold, dữ liệu lịch sử và một số hồ sơ đầu vào trùng giữa test với dữ liệu phát triển. Báo cáo đi kèm notebook, module, đặc trưng NumPy, mô hình cố định và các bảng kiểm tra để đối chiếu số liệu.
+
+\noindent\textbf{Từ khóa:} UCI Adult, phân loại nhị phân, tiền xử lý, cross-validation theo nhóm, PCA, MLP.

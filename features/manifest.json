@@ -1,0 +1,261 @@
+{
+  "step": 4,
+  "fit_split": "train",
+  "fit_rows": 26049,
+  "input_feature_columns": [
+    "age",
+    "workclass",
+    "fnlwgt",
+    "education",
+    "education-num",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week",
+    "native-country"
+  ],
+  "numeric_columns": [
+    "age",
+    "fnlwgt",
+    "education-num",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week"
+  ],
+  "categorical_columns": [
+    "workclass",
+    "education",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native-country"
+  ],
+  "target_mapping": {
+    "<=50K": 0,
+    ">50K": 1
+  },
+  "source_ids_file": "data/splits/{split}_metadata.csv",
+  "training_source_ids_sha256": "fbed13da0265ce25bd4d9a3862342f3d93655d3f9b6c119f2abe6bac20d5c658",
+  "common_arrays": {
+    "features/y_train.npy": {
+      "shape": [
+        26049
+      ],
+      "dtype": "int8",
+      "sha256": "8a26a7906e46a9e16e9ab0fde320cfd0c76ae35a92f143e52fc32dcfdf20c71b"
+    },
+    "features/source_row_train.npy": {
+      "shape": [
+        26049
+      ],
+      "dtype": "int64",
+      "sha256": "50ab4d358f1ce1b7610789fc655b38d1e0143fffc1d0df5eb04582a5516fc55d"
+    },
+    "features/y_validation.npy": {
+      "shape": [
+        6512
+      ],
+      "dtype": "int8",
+      "sha256": "5ba0cb00fbd654eae5c549d74eb2944daadf66818a7ebe8e1720eab2340bc734"
+    },
+    "features/source_row_validation.npy": {
+      "shape": [
+        6512
+      ],
+      "dtype": "int64",
+      "sha256": "f762254ad9abebfe1e3fcbe9f5511be7dd8a91bcc91f50b977001657da7003a7"
+    },
+    "features/y_test.npy": {
+      "shape": [
+        16281
+      ],
+      "dtype": "int8",
+      "sha256": "dd4a25c2b6736ba18caacdeb14cc6078ec67bb2b307b3283ff8aa79f6fafaa41"
+    },
+    "features/source_row_test.npy": {
+      "shape": [
+        16281
+      ],
+      "dtype": "int64",
+      "sha256": "c5735d395a3f783e1c095f5c1da1f626244f6ce130d1dfa23f77eb2954030f52"
+    }
+  },
+  "configurations": {
+    "baseline": {
+      "config": {
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "missing_token": "__MISSING__",
+        "encoding": "onehot",
+        "scaling": "standard",
+        "feature_range": [
+          0.0,
+          1.0
+        ],
+        "pca_variance": null
+      },
+      "feature_count": 105,
+      "fit_split": "train",
+      "fit_audit": {
+        "fit_rows": 26049,
+        "numeric_imputer_matches_train": true,
+        "numeric_scaler_matches_train": true,
+        "encoder_categories_match_train": true,
+        "pca_samples_match_train": null
+      },
+      "transform_did_not_change_fitted_state": true,
+      "pca_retained_variance": null,
+      "arrays": {
+        "features/baseline/X_train.npy": {
+          "shape": [
+            26049,
+            105
+          ],
+          "dtype": "float32",
+          "sha256": "6ba01732918608ac7d42f06d70b1a7ddc453b04379aabe60fa65f75c11da1125"
+        },
+        "features/baseline/X_validation.npy": {
+          "shape": [
+            6512,
+            105
+          ],
+          "dtype": "float32",
+          "sha256": "c47fd0d2c7e86cd4d9fdbbf74e0102169c0d738046affbb58ab5e1f1c8db63cf"
+        },
+        "features/baseline/X_test.npy": {
+          "shape": [
+            16281,
+            105
+          ],
+          "dtype": "float32",
+          "sha256": "15567c49b49d7c8f3ee596fa4d5e673ea08f2a2e23614a510c2e2a45eec8b708"
+        }
+      },
+      "pipeline_path": "artifacts/preprocessors/baseline.joblib",
+      "feature_names_path": "features/baseline/feature_names.json"
+    },
+    "pca_90": {
+      "config": {
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "missing_token": "__MISSING__",
+        "encoding": "onehot",
+        "scaling": "standard",
+        "feature_range": [
+          0.0,
+          1.0
+        ],
+        "pca_variance": 0.9
+      },
+      "feature_count": 22,
+      "fit_split": "train",
+      "fit_audit": {
+        "fit_rows": 26049,
+        "numeric_imputer_matches_train": true,
+        "numeric_scaler_matches_train": true,
+        "encoder_categories_match_train": true,
+        "pca_samples_match_train": true
+      },
+      "transform_did_not_change_fitted_state": true,
+      "pca_retained_variance": 0.9070086102107142,
+      "arrays": {
+        "features/pca_90/X_train.npy": {
+          "shape": [
+            26049,
+            22
+          ],
+          "dtype": "float32",
+          "sha256": "a314658823c373078040d2c1bbddf1e6dc860eaed11cd322ae1761b52fc94762"
+        },
+        "features/pca_90/X_validation.npy": {
+          "shape": [
+            6512,
+            22
+          ],
+          "dtype": "float32",
+          "sha256": "a57de059bfbe4a4181b58ea3c196f3235018acc9447e3ba3acaef25ac811c004"
+        },
+        "features/pca_90/X_test.npy": {
+          "shape": [
+            16281,
+            22
+          ],
+          "dtype": "float32",
+          "sha256": "de65d004466eb600e6f8d81ac684101204b04b5aba87e536db85590d318bff99"
+        }
+      },
+      "pipeline_path": "artifacts/preprocessors/pca_90.joblib",
+      "feature_names_path": "features/pca_90/feature_names.json"
+    },
+    "pca_95": {
+      "config": {
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "missing_token": "__MISSING__",
+        "encoding": "onehot",
+        "scaling": "standard",
+        "feature_range": [
+          0.0,
+          1.0
+        ],
+        "pca_variance": 0.95
+      },
+      "feature_count": 31,
+      "fit_split": "train",
+      "fit_audit": {
+        "fit_rows": 26049,
+        "numeric_imputer_matches_train": true,
+        "numeric_scaler_matches_train": true,
+        "encoder_categories_match_train": true,
+        "pca_samples_match_train": true
+      },
+      "transform_did_not_change_fitted_state": true,
+      "pca_retained_variance": 0.9511720987422719,
+      "arrays": {
+        "features/pca_95/X_train.npy": {
+          "shape": [
+            26049,
+            31
+          ],
+          "dtype": "float32",
+          "sha256": "aed65df847ba0556d13af57ade2435b8877fbefc3a05cc0fab8b3a9de6ce4c31"
+        },
+        "features/pca_95/X_validation.npy": {
+          "shape": [
+            6512,
+            31
+          ],
+          "dtype": "float32",
+          "sha256": "9b2cdb5154e7d9ea0e9c882e86f2695e8673c57f40540e33195020a667695fba"
+        },
+        "features/pca_95/X_test.npy": {
+          "shape": [
+            16281,
+            31
+          ],
+          "dtype": "float32",
+          "sha256": "9d4e70ad8fc930c168bdc64d8eb78cc7fdac1c3cd88a0c04761839a03a784766"
+        }
+      },
+      "pipeline_path": "artifacts/preprocessors/pca_95.joblib",
+      "feature_names_path": "features/pca_95/feature_names.json"
+    }
+  },
+  "versions": {
+    "python": "3.14.2",
+    "numpy": "2.4.4",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3"
+  },
+  "source_data_mutated": false,
+  "classifier_trained": false,
+  "cv_rule": "Use raw train data and fit a fresh complete pipeline inside each group CV fold; do not CV on these globally transformed X arrays.",
+  "test_model_metrics_computed": false
+}

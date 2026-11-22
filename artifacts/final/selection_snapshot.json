@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "winner_id": "mlp_32_reg",
+    "training_data_sha256": "468656037c77bcc3b0b1b269d4d1fda747a0893620c3c9ba631a31623257518d",
+    "validation_data_sha256": "e7ba31251324420a540509ebe3c21ea0292def1a3e2b00aad3eabd86ab15bbf1",
+    "cv_manifest_sha256": "e5e75d9a0a2e14514c18f2e441f799e22a0064942d581ed14428f4c6deda051e",
+    "candidates_sha256": "7bb6b7a55ed5a93284008785d3e7aed19e3ee73ed94f82aac1edeb310d67e1d4",
+    "candidate": {
+      "id": "mlp_32_reg",
+      "family": "MLP",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "hidden_layer_sizes": [
+          32
+        ],
+        "alpha": 0.01,
+        "tol": 0.001,
+        "n_iter_no_change": 10
+      }
+    },
+    "refit_rows": 26049,
+    "source_hashes": {
+      "data_loader.py": "0355ab605f273022aef498344878b1452d74d8b773de2b512d227b9d0a303ef1",
+      "splitting.py": "cc17ffc7244786aede599dd258ebcdcd6f7814ce6128c463d81fcd98e1be77a7",
+      "preprocessing.py": "70e7fdfdbb11e10135965d2db59191341108b9fbe13cc062879757c04f826175",
+      "training.py": "b67d7281732f9c7884656fb3b739249dc8c3b4ec4a411cc72d8a50d9cafd3cf4"
+    }
+  },
+  "pipeline_path": "artifacts/final/selected_pipeline.joblib",
+  "pipeline_sha256": "62a88d5517e33b030b098e82dc60aed5c2d86dfaa440b9b5f4fb536eae5c5065",
+  "pipeline_state_hash": "833e9581718afe59876c88c6fd7ef2c3",
+  "source_model_path": "artifacts/models/mlp_32_reg.joblib",
+  "source_model_sha256": "62a88d5517e33b030b098e82dc60aed5c2d86dfaa440b9b5f4fb536eae5c5065",
+  "threshold": 0.5,
+  "score_kind": "probability",
+  "prediction_rule": "native estimator predict; no threshold tuning",
+  "preprocessing": {
+    "numeric_imputation": "median",
+    "categorical_imputation": "most_frequent",
+    "missing_token": "__MISSING__",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "feature_range": [
+      0.0,
+      1.0
+    ],
+    "pca_variance": null
+  },
+  "stage_05_selection": {
+    "cv_manifest_sha256": "e5e75d9a0a2e14514c18f2e441f799e22a0064942d581ed14428f4c6deda051e",
+    "candidates_sha256": "7bb6b7a55ed5a93284008785d3e7aed19e3ee73ed94f82aac1edeb310d67e1d4",
+    "training_data_sha256": "468656037c77bcc3b0b1b269d4d1fda747a0893620c3c9ba631a31623257518d",
+    "selection_metric": "f1_mean",
+    "tie_breakers": [
+      "f1_std ascending",
+      "candidate_id ascending"
+    ],
+    "winner_id": "mlp_32_reg",
+    "family_winners": {
+      "LinearSVC": "svm_c1",
+      "LogisticRegression": "lr_missing_constant",
+      "MLP": "mlp_32_reg",
+      "RandomForest": "rf_full_leaf3"
+    },
+    "convergence_policy": "Candidates with any convergence warning are reported but excluded from locking.",
+    "validation_used_for_selection": false,
+    "test_accessed_by_experiment": false,
+    "versions": {
+      "python": "3.14.2",
+      "sklearn": "1.9.0",
+      "numpy": "2.4.4",
+      "pandas": "3.0.5",
+      "joblib": "1.5.3"
+    },
+    "candidate_count": 20,
+    "fold_count": 3,
+    "cv_fit_count": 60,
+    "note": "CV mean selected from this search is not an unbiased final performance estimate.",
+    "fitted_models": {
+      "svm_c1": "artifacts/models/svm_c1.joblib",
+      "lr_missing_constant": "artifacts/models/lr_missing_constant.joblib",
+      "mlp_32_reg": "artifacts/models/mlp_32_reg.joblib",
+      "rf_full_leaf3": "artifacts/models/rf_full_leaf3.joblib",
+      "dummy_majority": "artifacts/models/dummy_majority.joblib"
+    },
+    "selected_model_path": "artifacts/models/mlp_32_reg.joblib",
+    "validation_data_sha256": "e7ba31251324420a540509ebe3c21ea0292def1a3e2b00aad3eabd86ab15bbf1",
+    "refit_rows": 26049,
+    "validation_rows": 6512,
+    "refit_fit_count": 5,
+    "threshold_tuned": false,
+    "refit_on_train_plus_validation": false,
+    "test_model_metrics_computed": false
+  },
+  "versions": {
+    "python": "3.14.2",
+    "sklearn": "1.9.0",
+    "numpy": "2.4.4",
+    "pandas": "3.0.5",
+    "joblib": "1.5.3"
+  },
+  "created_before_test_evaluation": true
+}

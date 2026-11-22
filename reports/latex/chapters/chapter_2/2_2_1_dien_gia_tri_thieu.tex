@@ -1,0 +1,5 @@
+\subsection{Điền giá trị thiếu}
+\label{subsec:2_2_1}
+Imputation thay thế giá trị thiếu bằng giá trị được xác định theo một quy tắc. Với biến số, hai lựa chọn thông dụng là trung bình và trung vị của các giá trị quan sát trên train. Trung vị ít bị ảnh hưởng bởi các giá trị cực trị hơn trung bình. Với biến phân loại, có thể điền mức xuất hiện nhiều nhất hoặc tạo một mức riêng biểu diễn trạng thái thiếu~\cite{sklearn-imputer}.
+
+Các giá trị điền được học khi gọi \texttt{fit}. Khi gọi \texttt{transform} trên validation hoặc test, phải tái sử dụng các giá trị đó; không tính lại thống kê điền từ từng tập đánh giá. Trong hiện thực, cột hoàn toàn thiếu ở một lần fit vẫn được giữ để tránh mất vị trí cột giữa các lần biến đổi.

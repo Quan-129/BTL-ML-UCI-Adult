@@ -1,0 +1,11 @@
+\section{Kết quả đạt được}
+\label{sec:7_1}
+Đề tài đã triển khai quy trình học máy truyền thống cho UCI Adult và bổ sung MLP để đối chiếu. Quy trình đi từ tải dữ liệu công khai, kiểm tra chất lượng và EDA đến phân chia theo nhóm, tiền xử lý có thể cấu hình, khảo sát mô hình và đánh giá test với lựa chọn đã khóa. Không loại dòng trong hai tệp UCI gốc; toàn bộ 14 thuộc tính, gồm cả \texttt{fnlwgt}, được giữ làm đầu vào. \texttt{fnlwgt} không được dùng làm trọng số mẫu.
+
+Các sản phẩm gồm notebook tự chuẩn bị dữ liệu, module Python, nguồn LaTeX tách theo từng mục, các bảng/hình thực nghiệm, snapshot mô hình và 15 tệp NumPy. Ba bộ X fit từ toàn bộ train gồm bản cơ sở 105 chiều, PCA 90\% còn 22 chiều và PCA 95\% còn 31 chiều. Khi CV, pipeline được fit lại trên raw train của mỗi fold, không sử dụng trực tiếp các ma trận đã fit từ toàn bộ train.
+
+Trong phạm vi 20 cấu hình cuối, MLP 32 nút được chọn theo F1 CV trung bình 0,6814 với SD 0,0103. F1 validation là 0,6748 và F1 test là 0,6715. Trên 16.281 mẫu test, mô hình đạt accuracy 85,56\%, ROC-AUC 0,9093 và AP 0,7741. Ngưỡng 0,5 và snapshot được giữ nguyên sau khi xem test.
+
+Các đối chứng Logistic Regression chỉ thay một thành phần cho thấy kết quả phụ thuộc cách biểu diễn và thang đo. Trong các cấu hình đã chạy, ordinal và hai mức PCA có F1 thấp hơn mốc one-hot không PCA; lựa chọn điền biến phân loại bằng một nhóm thiếu có mức tăng nhỏ. Đây là kết quả trong thiết kế đã khảo sát, không phải kết luận về ưu thế phổ quát của một bộ mã hóa hay mô hình.
+
+Việc đối chiếu số liệu từ dự đoán từng mẫu giúp giải thích chất lượng theo số đếm: 2.403 TP, 908 FP, 1.443 FN và 11.527 TN. Các tệp kết quả, mã SHA-256 và cấu hình cho phép truy lại nguồn của các bảng trong báo cáo.

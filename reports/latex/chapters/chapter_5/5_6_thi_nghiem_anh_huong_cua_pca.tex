@@ -1,0 +1,5 @@
+\section{Thí nghiệm ảnh hưởng của PCA}
+\label{sec:5_6}
+Giữ Logistic Regression $C=1$ và tiền xử lý cơ sở, so sánh không PCA, PCA 90\% và PCA 95\%. PCA được fit riêng trong mỗi fold, sau khi ghép nhánh số và nhánh one-hot. Không sử dụng các hướng chiếu đã học từ toàn bộ train để đánh giá fold.
+
+Số thành phần của một fold phụ thuộc chính dữ liệu fit của fold đó và có thể khác con số 22/31 trong các file đặc trưng fit từ toàn bộ train ở bước 4. Tỷ lệ phương sai được giữ lại không trực tiếp đảm bảo chất lượng phân loại; tác động được nhận xét bằng F1 CV trong cùng thiết kế kiểm soát.

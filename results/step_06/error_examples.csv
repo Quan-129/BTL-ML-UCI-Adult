@@ -1,0 +1,11 @@
+source_id,source_row,y_true,y_pred,score,outcome,age,workclass,fnlwgt,education,education-num,marital-status,occupation,relationship,race,sex,capital-gain,capital-loss,hours-per-week,native-country
+adult.test:3605,3605,0,1,0.9995810389518738,FP,36,Self-emp-not-inc,240191,HS-grad,9,Married-civ-spouse,Exec-managerial,Husband,Asian-Pac-Islander,Male,41310,0,90,South
+adult.test:1418,1418,0,1,0.9822328090667723,FP,55,Self-emp-inc,298449,Doctorate,16,Married-civ-spouse,Prof-specialty,Husband,White,Male,0,2179,60,United-States
+adult.test:518,518,0,1,0.9764330983161926,FP,41,Private,177989,Doctorate,16,Married-civ-spouse,Prof-specialty,Husband,White,Male,0,2051,60,United-States
+adult.test:13977,13977,0,1,0.9627894163131714,FP,57,Self-emp-not-inc,20953,Masters,14,Married-civ-spouse,Sales,Husband,White,Male,0,2129,70,United-States
+adult.test:12053,12053,0,1,0.9581857919692992,FP,50,Self-emp-inc,193720,Bachelors,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,0,1672,48,United-States
+adult.test:5953,5953,1,0,0.0005120963323861,FN,20,Private,325033,12th,8,Never-married,Other-service,Own-child,Black,Male,0,0,35,United-States
+adult.test:10408,10408,1,0,0.0007527116686105,FN,22,,52596,Some-college,10,Never-married,,Own-child,White,Male,0,0,15,
+adult.test:6035,6035,1,0,0.0035835190210491,FN,30,Local-gov,38268,HS-grad,9,Separated,Other-service,Unmarried,White,Male,0,0,40,United-States
+adult.test:11821,11821,1,0,0.0038380674086511,FN,24,Private,360077,11th,7,Never-married,Prof-specialty,Own-child,White,Male,0,0,40,United-States
+adult.test:3059,3059,1,0,0.0049462136812508,FN,22,Private,185582,Some-college,10,Never-married,Sales,Not-in-family,White,Male,0,0,25,United-States

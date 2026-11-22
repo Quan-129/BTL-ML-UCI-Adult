@@ -1,0 +1,9 @@
+\section{Mạng nơ-ron nhiều lớp MLP}
+\label{sec:2_5}
+MLP truyền đầu vào qua các lớp kết nối đầy đủ. Với $\mathbf{h}^{(0)}=\mathbf{x}$, một lớp ẩn thực hiện $\mathbf{h}^{(l)}=\operatorname{ReLU}(W^{(l)}\mathbf{h}^{(l-1)}+\mathbf{b}^{(l)})$. Đầu ra nhị phân sử dụng hàm logistic để ước lượng xác suất lớp dương. Các tham số được cập nhật bằng Adam dựa trên mất mát logarit có regularization L2~\cite{sklearn-mlp}.
+
+Hai cấu hình được so sánh là một lớp ẩn 64 nút với $\alpha=10^{-4}$ và hai lớp ẩn 64--32 nút với $\alpha=10^{-3}$. Đây là hai cấu hình kết hợp; vì kiến trúc và mức phạt cùng thay đổi, không quy mọi khác biệt kết quả chỉ cho số lớp. Batch size bằng 256, learning rate ban đầu 0,001 và tối đa 300 epoch. Không bật early stopping với một tập nội bộ ngẫu nhiên để tránh phát sinh cách chia không theo nhóm; tiêu chí dừng theo training loss được áp dụng trong phạm vi phần train của mỗi fold.
+
+Sau khi hai cấu hình trên phát sinh cảnh báo đạt giới hạn epoch trong pilot, bổ sung cấu hình 32 nút với $\alpha=0{,}01$ và 64 nút với $\alpha=0{,}1$. Hai cấu hình bổ sung dùng tol $10^{-3}$, chờ 10 epoch, thay cho tol $10^{-4}$ và chờ 20 epoch ban đầu. Cả bốn cấu hình cùng được báo cáo; không dùng validation hoặc test để quyết định mở rộng này.
+
+MLP là phần mở rộng để đối chiếu với pipeline truyền thống. Mạng vẫn dùng các đặc trưng đã điền thiếu, one-hot và chuẩn hóa; không được mô tả như một mô hình tự xử lý dữ liệu phân loại thô đầu cuối.

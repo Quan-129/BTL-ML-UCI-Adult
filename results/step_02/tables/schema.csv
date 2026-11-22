@@ -1,0 +1,16 @@
+﻿column,dtype,group,n_unique_non_missing,missing_count
+age,Int64,numeric,73,0
+workclass,string,categorical,8,1836
+fnlwgt,Int64,numeric,21648,0
+education,string,categorical,16,0
+education-num,Int64,numeric,16,0
+marital-status,string,categorical,7,0
+occupation,string,categorical,14,1843
+relationship,string,categorical,6,0
+race,string,categorical,5,0
+sex,string,categorical,2,0
+capital-gain,Int64,numeric,119,0
+capital-loss,Int64,numeric,92,0
+hours-per-week,Int64,numeric,94,0
+native-country,string,categorical,41,583
+income,string,target,2,0

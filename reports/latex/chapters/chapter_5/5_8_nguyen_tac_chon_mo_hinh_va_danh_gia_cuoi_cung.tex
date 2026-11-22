@@ -1,0 +1,5 @@
+\section{Nguyên tắc chọn mô hình và đánh giá cuối cùng}
+\label{sec:5_8}
+Lựa chọn được thực hiện theo thứ tự: hoàn tất toàn bộ CV, lọc cấu hình không hội tụ theo quy tắc đã nêu, khóa mô hình thắng chung và từng họ, fit lại trên train, sau đó mới đối chiếu validation. Không sửa lựa chọn dựa trên validation. Cấu hình đã khóa là \texttt{mlp\_32\_reg} với F1 CV trung bình 0,6814 và SD 0,0103.
+
+Pipeline đã fit được lưu tại \texttt{artifacts/models/mlp\_32\_reg.joblib}. Tệp \texttt{selected\_model.json} ghi cấu hình lựa chọn, fingerprint dữ liệu, phiên bản và đường dẫn mô hình. Phép đánh giá cuối dùng đúng mô hình và ngưỡng đã khóa; kết quả nằm ở mục 6.5 và không được dùng để chọn lại cấu hình. Bước 5 không tính chỉ số hoặc dự đoán test và không fit lại bằng train cộng validation.

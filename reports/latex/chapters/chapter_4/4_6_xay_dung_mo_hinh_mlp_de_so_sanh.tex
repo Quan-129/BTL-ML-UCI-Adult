@@ -1,0 +1,5 @@
+\section{Xây dựng mô hình MLP để so sánh}
+\label{sec:4_6}
+MLP được đặt sau đúng quy trình tiền xử lý cơ sở và sử dụng cùng nhãn, fold và tiêu chí đánh giá với các mô hình truyền thống. Hai cấu hình ban đầu là 64 và 64--32 nút; hai cấu hình 32 và 64 nút với regularization mạnh hơn được bổ sung sau pilot để xử lý cảnh báo tối ưu. Seed bằng 42; số luồng BLAS được giới hạn ở 2 để kiểm soát tài nguyên khi chạy tuần tự.
+
+Không dùng validation bên ngoài để dừng học hoặc chọn số epoch. Early stopping nội bộ của \texttt{MLPClassifier} được tắt; thuật toán có thể dừng khi training loss không cải thiện đủ theo tol và số epoch chờ đã cấu hình. Cảnh báo không hội tụ được ghi vào audit, không bị bỏ qua. Đường training loss của bản MLP fit lại được lưu ở \texttt{mlp\_training\_loss.csv}; đây là training loss, không phải đường đánh giá test.

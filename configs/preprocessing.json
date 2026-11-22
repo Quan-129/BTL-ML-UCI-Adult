@@ -1,0 +1,38 @@
+{
+  "baseline": {
+    "numeric_imputation": "median",
+    "categorical_imputation": "most_frequent",
+    "missing_token": "__MISSING__",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "feature_range": [
+      0.0,
+      1.0
+    ],
+    "pca_variance": null
+  },
+  "pca_90": {
+    "numeric_imputation": "median",
+    "categorical_imputation": "most_frequent",
+    "missing_token": "__MISSING__",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "feature_range": [
+      0.0,
+      1.0
+    ],
+    "pca_variance": 0.9
+  },
+  "pca_95": {
+    "numeric_imputation": "median",
+    "categorical_imputation": "most_frequent",
+    "missing_token": "__MISSING__",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "feature_range": [
+      0.0,
+      1.0
+    ],
+    "pca_variance": 0.95
+  }
+}

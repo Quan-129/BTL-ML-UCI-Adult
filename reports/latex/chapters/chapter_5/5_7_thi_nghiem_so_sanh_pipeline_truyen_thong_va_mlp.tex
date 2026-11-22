@@ -1,0 +1,5 @@
+\section{Thí nghiệm so sánh pipeline truyền thống và MLP}
+\label{sec:5_7}
+MLP dùng cùng tiền xử lý cơ sở với ba họ truyền thống và được chọn giữa các cấu hình đủ điều kiện hội tụ bằng F1 CV. Bốn cấu hình đã chạy, bao gồm hai cấu hình bổ sung sau pilot, đều có kết quả và cảnh báo được lưu. So sánh bổ sung precision, recall, ROC-AUC và thời gian fit. Chi phí và độ nhạy cấu hình của MLP được xem cùng mức tăng hoặc giảm chất lượng, không chỉ nhìn một chỉ số duy nhất.
+
+Các cấu hình được chạy với một seed. Chưa có thí nghiệm nhiều seed hoặc kiểm định ý nghĩa thống kê; chênh lệch nhỏ không được diễn giải thành ưu thế chắc chắn. Đường training loss chỉ dùng kiểm tra quá trình tối ưu, không dùng thay cho điểm trên fold chưa thấy.

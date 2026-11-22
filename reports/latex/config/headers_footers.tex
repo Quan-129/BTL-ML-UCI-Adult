@@ -1,0 +1,24 @@
+% Đầu trang và chân trang theo nội dung của PDF báo cáo đã gửi.
+% Dùng cùng kiểu cho trang mở đầu chương và các trang thông thường.
+\newcommand{\ReportHeader}{%
+  \begin{minipage}[c]{11mm}
+    \includegraphics[width=9mm]{Images/frontmatter/logo_hcmut.pdf}
+  \end{minipage}%
+  \begin{minipage}[c]{0.85\textwidth}
+    \sffamily\fontsize{9}{11}\selectfont\color{HeaderText}
+    Trường Đại học Bách khoa, ĐHQG-HCM\\
+    Khoa Khoa học và Kỹ thuật Máy tính
+  \end{minipage}%
+}
+\newcommand{\ApplyReportPageStyle}{%
+  \fancyhf{}
+  \fancyhead[L]{\ReportHeader}
+  \fancyfoot[L]{\sffamily\fontsize{8}{10}\selectfont
+    Bài tập lớn Học máy - Năm học \NamHoc}
+  \fancyfoot[R]{\sffamily\fontsize{8}{10}\selectfont Trang \thepage}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+}
+\pagestyle{fancy}
+\ApplyReportPageStyle
+\fancypagestyle{plain}{\ApplyReportPageStyle}

@@ -1,0 +1,40 @@
+\subsection{Các chỉ số đánh giá}
+\label{subsec:6_5_1}
+Các chỉ số được tính từ nhãn test và dự đoán cố định; lớp dương là \texttt{>50K}. Accuracy đạt 85,56\%, nhưng recall lớp dương chỉ đạt 62,48\%. Vì vậy, tỷ lệ dự đoán đúng tổng thể không đủ để mô tả khả năng nhận diện nhóm thu nhập cao.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Các chỉ số trên toàn bộ tập test với ngưỡng đã khóa}\label{tab:test-metrics}
+\begin{tabular}{lr}
+\toprule
+Chỉ số & Giá trị \\
+\midrule
+Accuracy & 0,8556 \\
+Precision lớp >50K & 0,7258 \\
+Recall lớp >50K & 0,6248 \\
+F1 lớp >50K & 0,6715 \\
+Macro-F1 & 0,7895 \\
+ROC-AUC & 0,9093 \\
+Average precision (AP) & 0,7741 \\
+Specificity & 0,9270 \\
+False positive rate (FPR) & 0,0730 \\
+False negative rate (FNR) & 0,3752 \\
+Balanced accuracy & 0,7759 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[htbp]
+\centering\small
+\caption{Kết quả test theo từng lớp}\label{tab:test-per-class}
+\begin{tabular}{lrrrr}
+\toprule
+Lớp & Precision & Recall & F1 & Số mẫu \\
+\midrule
+\texttt{<=50K} & 0,8887 & 0,9270 & 0,9075 & 12.435 \\
+\texttt{>50K} & 0,7258 & 0,6248 & 0,6715 & 3.846 \\
+\bottomrule
+\end{tabular}
+\end{table}
+Precision 0,7258 và recall 0,6248 cho thấy tại ngưỡng 0,5 mô hình vẫn bỏ sót một phần mẫu dương. Specificity bằng 0,9270 mô tả tỷ lệ nhận diện đúng lớp âm; FPR bằng 0,0730 là tỷ lệ mẫu âm bị dự đoán thành dương. Macro-F1 và balanced accuracy cho mỗi lớp vai trò cân bằng hơn so với accuracy tổng thể.
+
+ROC-AUC và AP sử dụng score lớp dương để đánh giá thứ hạng qua nhiều ngưỡng. AP là tổng có trọng số theo bước tăng recall, không được đồng nhất với diện tích PR tính bằng quy tắc hình thang~\cite{sklearn-ap}. Không dùng các đường cong test để chọn lại ngưỡng.

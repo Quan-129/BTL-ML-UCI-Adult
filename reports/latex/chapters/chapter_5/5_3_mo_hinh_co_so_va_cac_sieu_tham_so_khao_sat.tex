@@ -1,0 +1,14 @@
+\section{Mô hình cơ sở và các siêu tham số khảo sát}
+\label{sec:5_3}
+Vòng thí nghiệm cuối gồm 20 cấu hình, mỗi cấu hình được đánh giá trên 3 fold, tương ứng 60 lượt fit CV:
+\begin{itemize}
+\item DummyClassifier luôn dự đoán lớp đa số: 1 cấu hình tham chiếu, không tham gia chọn mô hình thắng.
+\item Logistic Regression: $C=0{,}1;1;10$, lbfgs, tối đa 2.000 vòng lặp, tol $10^{-5}$: 3 cấu hình.
+\item LinearSVC: $C=0{,}1;1;10$, squared hinge, L2, dual=False, tối đa 10.000 vòng lặp, tol $10^{-5}$: 3 cấu hình.
+\item Random Forest: 150 cây, max\_features=sqrt, bootstrap; ba lựa chọn depth/leaf đã mô tả: 3 cấu hình.
+\item MLP: hai cấu hình ban đầu 64 và 64--32, Adam, 300 epoch tối đa, batch 256, tol $10^{-4}$, chờ 20 epoch; hai cấu hình bổ sung 32 và 64 nút, regularization mạnh hơn, tol $10^{-3}$, chờ 10 epoch: tổng 4 cấu hình.
+\item Logistic Regression $C=1$ với bốn biến thể điền thiếu/mã hóa/scaling và hai biến thể PCA: 6 cấu hình.
+\end{itemize}
+Toàn bộ cấu hình đầy đủ được lưu trong \texttt{configs/experiments.json}; tham số mô hình mặc định còn lại được lưu trong các pipeline và được diễn giải theo phiên bản thư viện. Không gọi đây là tìm kiếm tối ưu toàn cục: số lựa chọn của các họ không bằng nhau và phạm vi khảo sát có giới hạn.
+
+Pilot 18 cấu hình đầu tiên tạo 54 lượt fit, trong đó hai cấu hình MLP đều đạt giới hạn epoch ở cả ba fold. Sau khi kiểm tra cảnh báo tối ưu, bổ sung hai cấu hình MLP và chạy lại vòng 20 cấu hình. Đây là mở rộng dựa trên thông tin train/CV, không phải toàn bộ tìm kiếm được ấn định trước từ đầu. Kết quả pilot được giữ trong \texttt{results/step\_05/pilot\_18/}; lý do thay đổi nằm trong \texttt{experiment\_revision.json}. Chưa xem validation hoặc test trước khi thay đổi.

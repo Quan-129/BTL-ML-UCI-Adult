@@ -1,0 +1,13 @@
+{
+  "train_validation_source_index_overlap": 0,
+  "train_validation_group_overlap": 0,
+  "all_development_rows_assigned_once": true,
+  "all_source_ids_unique": true,
+  "test_rows_preserved": true,
+  "test_values_and_order_preserved": true,
+  "test_used_to_choose_split": false,
+  "test_label_statistics_computed": false,
+  "train_test_feature_overlap_audit": "not_performed_at_step_03",
+  "preprocessing_fitted": false,
+  "rows_removed": 0
+}

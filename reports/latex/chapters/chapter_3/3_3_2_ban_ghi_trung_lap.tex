@@ -1,0 +1,19 @@
+\subsection{Bản ghi trùng lặp}
+\label{subsec:3_3_2}
+Hai định nghĩa được khảo sát riêng: trùng toàn bộ 15 cột, gồm cả nhãn, và trùng 14 thuộc tính đầu vào. Số dòng dư là số dòng lặp ngoài lần xuất hiện đầu tiên; số dòng tham gia bao gồm tất cả các thành viên của những nhóm trùng. Giá trị thiếu được xem là cùng một trạng thái khi đối chiếu các hồ sơ.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Các dạng trùng lặp trong adult.data gốc}\label{tab:duplicates-train}
+\begin{tabular}{lrrr}
+\toprule
+Định nghĩa & Dòng dư & Dòng tham gia & Số nhóm \\
+\midrule
+Toàn bộ 15 cột & 24 & 47 & 23 \\
+Chỉ 14 đầu vào & 25 & 49 & 24 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Có 1 nhóm đầu vào giống nhau nhưng có nhãn khác nhau, gồm 2 dòng. Các trường hợp này được lưu để kiểm tra, chưa bị xóa hoặc gán lại nhãn. Ở bước chia dữ liệu, cần cân nhắc giữ những hồ sơ có cùng đầu vào trong cùng một phía để hạn chế việc các bản sao xuất hiện đồng thời ở train và validation. Phép kiểm tra ở đây chỉ đối chiếu nội bộ dữ liệu phát triển, chưa so sánh với test.

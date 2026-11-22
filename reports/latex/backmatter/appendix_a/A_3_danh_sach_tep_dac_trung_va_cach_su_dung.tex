@@ -1,0 +1,7 @@
+\section{Danh sách tệp đặc trưng và cách sử dụng}
+\label{sec:A_3}
+Ba thư mục đặc trưng là \texttt{features/baseline/}, \texttt{features/pca\_90/} và \texttt{features/pca\_95/}. Mỗi thư mục chứa ba ma trận X cùng tên cột và manifest. Nhãn và chỉ số dòng dùng chung được đặt ngay trong \texttt{features/}.
+
+Đọc tệp bằng \texttt{numpy.load(..., allow\_pickle=False)}. Ghép X với y và source\_row của đúng tập, giữ nguyên thứ tự. Tra cứu mã nhóm và source\_id trong metadata CSV ở \texttt{data/splits/}. Không ghép cột giữa các cấu hình PCA và không đưa nhãn hoặc metadata vào X.
+
+Các ma trận này đã được fit tiền xử lý trên toàn bộ train, phù hợp với quy trình holdout đã khóa. Để cross-validation và tìm siêu tham số, dùng dữ liệu train thô và ghép \texttt{build\_preprocessor} vào pipeline mô hình để fit lại trong mỗi fold. Sau khi đổi cấu hình hoặc fit lại trên train cùng validation ở giai đoạn cuối, cần xuất lại đặc trưng và cập nhật manifest.

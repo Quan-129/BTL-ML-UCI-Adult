@@ -1,0 +1,64 @@
+[
+  {
+    "candidate_id": "svm_c1",
+    "fit_audit": {
+      "fit_rows": 26049,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 10
+  },
+  {
+    "candidate_id": "lr_missing_constant",
+    "fit_audit": {
+      "fit_rows": 26049,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": [
+      212
+    ]
+  },
+  {
+    "candidate_id": "mlp_32_reg",
+    "fit_audit": {
+      "fit_rows": 26049,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": 23
+  },
+  {
+    "candidate_id": "rf_full_leaf3",
+    "fit_audit": {
+      "fit_rows": 26049,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": []
+  },
+  {
+    "candidate_id": "dummy_majority",
+    "fit_audit": {
+      "fit_rows": 26049,
+      "numeric_imputer_matches_train": true,
+      "numeric_scaler_matches_train": true,
+      "encoder_categories_match_train": true,
+      "pca_samples_match_train": null
+    },
+    "warnings": [],
+    "model_n_iter": []
+  }
+]

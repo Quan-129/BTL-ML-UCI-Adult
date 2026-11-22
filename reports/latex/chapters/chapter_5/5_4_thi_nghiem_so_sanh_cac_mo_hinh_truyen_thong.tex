@@ -1,0 +1,5 @@
+\section{Thí nghiệm so sánh các mô hình truyền thống}
+\label{sec:5_4}
+So sánh ba họ Logistic Regression, LinearSVC và Random Forest trên cùng tiền xử lý cơ sở: median, mode, one-hot, StandardScaler cho sáu biến số và không PCA. Trong mỗi họ, chọn siêu tham số tốt nhất theo F1 CV trong các cấu hình scope=model. Dummy đa số cho biết khả năng của một mô hình không học được cách nhận diện lớp dương.
+
+Các kết quả được ghi theo từng fold và tổng hợp mean/SD. So sánh này đánh giá hiệu quả trong các cấu hình đã chạy; không suy rộng rằng một họ luôn tốt hơn họ khác trên mọi tập dữ liệu hoặc mọi lưới siêu tham số.

@@ -1,0 +1,61 @@
+{
+  "stage": 2,
+  "eda_population": "adult.data original training split only",
+  "n_rows": 32561,
+  "n_features": 14,
+  "n_numeric": 6,
+  "n_categorical": 8,
+  "label_counts": {
+    "<=50K": 24720,
+    ">50K": 7841
+  },
+  "label_percent": {
+    "<=50K": 75.91904425539757,
+    ">50K": 24.080955744602438
+  },
+  "majority_to_minority_ratio": 3.152659099604642,
+  "missing_counts": {
+    "occupation": 1843,
+    "workclass": 1836,
+    "native-country": 583
+  },
+  "rows_with_missing": 2399,
+  "rows_with_missing_percent": 7.367709836921471,
+  "exact_duplicate_extra": 24,
+  "exact_duplicate_involved": 47,
+  "exact_duplicate_groups": 23,
+  "feature_duplicate_extra": 25,
+  "feature_duplicate_involved": 49,
+  "feature_duplicate_groups": 24,
+  "conflicting_label_groups": 1,
+  "conflicting_label_rows": 2,
+  "invalid_domain_total": 0,
+  "iqr_flagged_counts": {
+    "age": 143,
+    "fnlwgt": 992,
+    "education-num": 1198,
+    "capital-gain": 2712,
+    "capital-loss": 1519,
+    "hours-per-week": 9008
+  },
+  "zero_percent": {
+    "age": 0.0,
+    "fnlwgt": 0.0,
+    "education-num": 0.0,
+    "capital-gain": 91.67101747489328,
+    "capital-loss": 95.33490986149073,
+    "hours-per-week": 0.0
+  },
+  "figures": [
+    "categorical_counts_1",
+    "categorical_counts_2",
+    "education_income_rate",
+    "label_distribution",
+    "missing_values",
+    "numeric_boxplots",
+    "numeric_histograms"
+  ],
+  "input_mutated": false,
+  "test_used_for_eda": false,
+  "rows_removed": 0
+}

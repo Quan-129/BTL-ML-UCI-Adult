@@ -1,0 +1,9 @@
+\section{Nhận xét tổng hợp về các kết quả}
+\label{sec:6_7}
+Trong phạm vi tìm kiếm đã thực hiện, MLP 32 nút được khóa bằng F1 CV trung bình 0,6814 với SD 0,0103. F1 validation là 0,6748 và F1 test là 0,6715. Đây là ba giai đoạn có vai trò khác nhau; không chọn giá trị lớn nhất giữa chúng để gọi là kết quả cuối. Test đạt accuracy 85,56\% và ROC-AUC 0,9093, trong khi recall lớp thu nhập cao 62,48\% vẫn là hạn chế tại ngưỡng 0,5.
+
+Sau khi đã khóa và đánh giá, đối chiếu 14 thuộc tính đầu vào phát hiện 22 dòng test có hồ sơ trùng train và 4 dòng test có hồ sơ trùng validation. Nhãn income không tham gia tạo khóa nhóm. Việc trùng thuộc tính không khẳng định chắc chắn cùng một người thực. Toàn bộ 16.281 mẫu test UCI vẫn được giữ trong phép đánh giá; không loại các dòng trùng sau khi thấy kết quả và không báo cáo tập test như đã được bảo đảm tách biệt tuyệt đối theo hồ sơ đầu vào.
+
+Các kết quả dựa trên lưới siêu tham số giới hạn, ba fold và một seed; tìm kiếm MLP được mở rộng sau pilot do cảnh báo tối ưu và đã được ghi lại. Chưa có kiểm định nhiều seed, khoảng tin cậy, đánh giá hiệu chỉnh xác suất hoặc bảo đảm tổng quát hóa sang quần thể khác. Tập test đã được sử dụng ở bước 6 nên không tiếp tục dùng nó để tinh chỉnh cấu hình rồi trình bày như dữ liệu đánh giá chưa thấy.
+
+Chương 7 tổng hợp các kết quả, hạn chế và hướng phát triển. Các phụ lục trình bày cấu trúc sản phẩm, cách thực thi và bảng phân công công việc.

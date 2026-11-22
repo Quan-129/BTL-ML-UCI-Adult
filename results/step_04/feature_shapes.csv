@@ -1,0 +1,10 @@
+configuration,split,rows,features,dtype,pca_retained_variance,all_values_finite
+baseline,train,26049,105,float32,,True
+baseline,validation,6512,105,float32,,True
+baseline,test,16281,105,float32,,True
+pca_90,train,26049,22,float32,0.9070086102107142,True
+pca_90,validation,6512,22,float32,0.9070086102107142,True
+pca_90,test,16281,22,float32,0.9070086102107142,True
+pca_95,train,26049,31,float32,0.9511720987422719,True
+pca_95,validation,6512,31,float32,0.9511720987422719,True
+pca_95,test,16281,31,float32,0.9511720987422719,True

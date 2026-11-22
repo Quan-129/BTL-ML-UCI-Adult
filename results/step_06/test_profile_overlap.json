@@ -1,0 +1,28 @@
+{
+  "input_columns": [
+    "age",
+    "workclass",
+    "fnlwgt",
+    "education",
+    "education-num",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week",
+    "native-country"
+  ],
+  "label_in_group_key": false,
+  "test_rows": 16281,
+  "unique_test_profiles": 16275,
+  "test_rows_matching_train_profile": 22,
+  "test_profiles_matching_train": 22,
+  "test_rows_matching_validation_profile": 4,
+  "test_profiles_matching_validation": 4,
+  "rows_removed": 0,
+  "used_for_model_or_threshold_selection": false,
+  "interpretation": "Identical 14-feature records, not proof of same real person; original UCI test remains unchanged."
+}

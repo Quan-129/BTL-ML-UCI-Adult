@@ -1,0 +1,7 @@
+\subsection{Tải dữ liệu từ nguồn công khai}
+\label{subsec:4_2_1}
+Notebook tải tệp ZIP từ địa chỉ công khai \url{https://archive.ics.uci.edu/static/public/2/adult.zip}. Nội dung ZIP được kiểm tra trước khi trích xuất ba tệp \texttt{adult.data}, \texttt{adult.test} và \texttt{adult.names} vào thư mục \texttt{data/}. Khi chạy lại, chương trình có thể tái sử dụng ZIP hợp lệ đã có trong môi trường hiện tại.
+
+Module \texttt{modules/data\_loader.py} đặt tên 14 thuộc tính và nhãn, đọc các cột số và phân loại với kiểu dữ liệu rõ ràng, loại khoảng trắng thừa và nhận diện dấu \texttt{?} là giá trị thiếu. Dòng chú thích đầu tệp test được bỏ qua; dấu chấm cuối nhãn test được bỏ để thống nhất với train. Các thao tác này không loại bản ghi dữ liệu và không điền giá trị thiếu.
+
+Chương trình kiểm tra kích thước hai tập, thứ tự cột và miền giá trị của nhãn. Hai bảng đã đọc được lưu ở \texttt{data/loaded/}; thông tin nguồn và mã SHA-256 của ZIP được lưu trong \texttt{results/step\_01/data\_inventory.json}. Ở bước này chưa xuất ma trận đặc trưng phục vụ mô hình.

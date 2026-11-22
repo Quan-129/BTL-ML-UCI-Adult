@@ -1,0 +1,7 @@
+\section{Môi trường thực nghiệm và khả năng tái lập}
+\label{sec:5_1}
+Notebook tự tải ZIP UCI, tạo các module và chuẩn bị thư viện, không mount cloud cá nhân. Các fold được lưu theo chỉ số dòng với fingerprint dữ liệu và mã nhóm; khi chạy lại, dữ liệu hoặc cấu hình không khớp sẽ bị từ chối thay vì tự chia lại.
+
+Các kết quả trong báo cáo được tạo bằng Python 3.14.2, scikit-learn 1.9.0, NumPy 2.4.4 và pandas 3.0.5. Seed bằng 42. Các cấu hình được chạy tuần tự, Random Forest dùng một worker, BLAS giới hạn 2 luồng. Thời gian huấn luyện phụ thuộc phần cứng và được dùng để tham khảo, không xem là kết quả benchmark giữa các máy.
+
+Cache CV chỉ được tái sử dụng khi dữ liệu, metadata, fold, cấu hình, phiên bản, mã nguồn và SHA-256 của các tệp kết quả đều khớp. Notebook độc lập trên môi trường Colab mới không có cache sẽ thực hiện đầy đủ thí nghiệm. Quy trình notebook đã được thực thi từ đầu đến cuối trên Google Colab. Các số liệu trong báo cáo tương ứng với môi trường thực nghiệm được ghi ở trên.

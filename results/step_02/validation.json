@@ -1,0 +1,33 @@
+{
+  "step": 2,
+  "status": "passed",
+  "checks": [
+    "Tổng nhãn, tỷ lệ, số ô thiếu và số dòng thiếu khớp với tính lại độc lập từ train.",
+    "Cả tám bảng phân loại giữ đủ mẫu và tính đúng mẫu số tỷ lệ nhãn dương.",
+    "Hai định nghĩa trùng lặp và nhóm khác nhãn khớp với bộ đếm tuple Python độc lập.",
+    "Các cờ IQR được đối chiếu độc lập bằng NumPy; không xóa điểm.",
+    "Tình huống kiểm thử nhỏ phân biệt đúng dòng dư/dòng tham gia, nhãn xung đột và thiếu nhiều ô; đầu vào không đổi.",
+    "Toàn bộ 18 ô Python đã chạy cục bộ; notebook chứa đúng bảy biểu đồ, không lỗi và không dùng test cho EDA.",
+    "Chương 1 giữ nguyên; các mục EDA có nội dung và hình, đường dẫn/nhãn/trích dẫn LaTeX hợp lệ theo kiểm tra tĩnh.",
+    "Bảy PNG có đúng định dạng; ZIP LaTeX đầy đủ hình và logo PDF 1.4, không hỏng."
+  ],
+  "python_version": "3.14.2",
+  "pandas_version": "3.0.5",
+  "numpy_version": "2.4.4",
+  "notebook_code_cells_executed": 18,
+  "tables": 19,
+  "figures": 7,
+  "train_shape": [
+    32561,
+    15
+  ],
+  "test_shape": [
+    16281,
+    15
+  ],
+  "colab_service_run_verified": false,
+  "latex_compilation_verified": false,
+  "test_used_for_eda": false,
+  "data_rows_removed": 0,
+  "feature_matrices_created": false
+}

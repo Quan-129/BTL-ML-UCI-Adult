@@ -1,0 +1,5 @@
+\subsection{Mã hóa biến phân loại}
+\label{subsec:4_3_2}
+Cấu hình cơ sở dùng one-hot cho cả tám biến phân loại, không bỏ một mức tham chiếu và cho phép mức chưa thấy khi transform. Số cột đầu ra được xác định duy nhất từ những mức có trong train sau khi điền thiếu. Validation và test không bổ sung mức mới vào encoder.
+
+Pipeline cũng hỗ trợ ordinal với mã $-1$ cho mức chưa thấy. Lựa chọn encoding được truyền qua cấu hình để các thí nghiệm sau có thể thay đúng một yếu tố mà giữ các bước còn lại.

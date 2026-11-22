@@ -1,0 +1,4 @@
+split,source_file,rows,share_of_development_percent,unique_groups,positive_count,positive_percent
+train,adult.data,26049,80.00061423174964,26029.0,6273.0,24.081538638719337
+validation,adult.data,6512,19.99938576825036,6507.0,1568.0,24.078624078624077
+test,adult.test,16281,,,,

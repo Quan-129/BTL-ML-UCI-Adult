@@ -1,0 +1,21 @@
+\section{Lưu đặc trưng và thông tin đi kèm}
+\label{sec:4_8}
+Mỗi cấu hình có một thư mục \texttt{features/<cau-hinh>/} chứa \texttt{X\_train.npy}, \texttt{X\_validation.npy}, \texttt{X\_test.npy}, tên cột và manifest. Các ma trận có kiểu \texttt{float32}, cùng số cột trong một cấu hình, không NaN và không có giá trị vô hạn.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Kích thước đặc trưng đã xuất ở bước 4}\label{tab:feature-shapes}
+\begin{tabular}{lrrr}
+\toprule
+Cấu hình & Train & Validation & Test \\
+\midrule
+baseline & $26\,049\times 105$ & $6\,512\times 105$ & $16\,281\times 105$ \\
+pca\_90 & $26\,049\times 22$ & $6\,512\times 22$ & $16\,281\times 22$ \\
+pca\_95 & $26\,049\times 31$ & $6\,512\times 31$ & $16\,281\times 31$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Các nhãn \texttt{y\_<tap>.npy} dùng kiểu \texttt{int8}, với \texttt{<=50K}=0 và \texttt{>50K}=1. Các tệp \texttt{source\_row\_<tap>.npy} dùng kiểu \texttt{int64} và khớp thứ tự dòng với metadata đã khóa. Manifest ghi cấu hình, tên đặc trưng, ánh xạ nhãn, phiên bản thư viện, mã SHA-256 và nguồn train đã dùng để fit. Các pipeline fitted được lưu trong \texttt{artifacts/preprocessors/} để tái sử dụng trong cùng môi trường tương thích.
+
+Kiểm tra đã đối chiếu các thống kê imputer, scaler, miền encoder và tâm PCA với train. Trạng thái fitted không đổi sau transform validation/test. Dữ liệu gốc và phân chia bước 3 được giữ nguyên. Các nhãn test được mã hóa để lưu tệp, không dùng để fit đặc trưng hoặc chọn cấu hình. Chỉ số test được tính riêng sau khi đã khóa mô hình, như trình bày ở mục 6.5.

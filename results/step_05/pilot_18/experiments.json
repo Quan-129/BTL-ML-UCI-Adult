@@ -1,0 +1,207 @@
+{
+  "seed": 42,
+  "cv": {
+    "n_splits": 3,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "selection": "maximum mean CV F1 of >50K; tie: smaller std then candidate ID",
+  "threshold": "native predict: probability 0.5, LinearSVC decision 0",
+  "class_weight": null,
+  "sampling": "none",
+  "candidates": [
+    {
+      "id": "dummy_majority",
+      "family": "Dummy",
+      "scope": "reference",
+      "preprocessing": {},
+      "model": {}
+    },
+    {
+      "id": "lr_c01",
+      "family": "LogisticRegression",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "C": 0.1
+      }
+    },
+    {
+      "id": "lr_c1",
+      "family": "LogisticRegression",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "C": 1.0
+      }
+    },
+    {
+      "id": "lr_c10",
+      "family": "LogisticRegression",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "C": 10.0
+      }
+    },
+    {
+      "id": "svm_c01",
+      "family": "LinearSVC",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "C": 0.1
+      }
+    },
+    {
+      "id": "svm_c1",
+      "family": "LinearSVC",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "C": 1.0
+      }
+    },
+    {
+      "id": "svm_c10",
+      "family": "LinearSVC",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "C": 10.0
+      }
+    },
+    {
+      "id": "rf_full_leaf1",
+      "family": "RandomForest",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "n_estimators": 150,
+        "max_depth": null,
+        "min_samples_leaf": 1
+      }
+    },
+    {
+      "id": "rf_full_leaf3",
+      "family": "RandomForest",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "n_estimators": 150,
+        "max_depth": null,
+        "min_samples_leaf": 3
+      }
+    },
+    {
+      "id": "rf_depth20_leaf3",
+      "family": "RandomForest",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "n_estimators": 150,
+        "max_depth": 20,
+        "min_samples_leaf": 3
+      }
+    },
+    {
+      "id": "mlp_64",
+      "family": "MLP",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "alpha": 0.0001
+      }
+    },
+    {
+      "id": "mlp_64_32",
+      "family": "MLP",
+      "scope": "model",
+      "preprocessing": {},
+      "model": {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 0.001
+      }
+    },
+    {
+      "id": "lr_missing_constant",
+      "family": "LogisticRegression",
+      "scope": "preprocessing",
+      "preprocessing": {
+        "categorical_imputation": "constant"
+      },
+      "model": {
+        "C": 1.0
+      }
+    },
+    {
+      "id": "lr_ordinal",
+      "family": "LogisticRegression",
+      "scope": "preprocessing",
+      "preprocessing": {
+        "encoding": "ordinal"
+      },
+      "model": {
+        "C": 1.0
+      }
+    },
+    {
+      "id": "lr_minmax01",
+      "family": "LogisticRegression",
+      "scope": "preprocessing",
+      "preprocessing": {
+        "scaling": "minmax",
+        "feature_range": [
+          0,
+          1
+        ]
+      },
+      "model": {
+        "C": 1.0
+      }
+    },
+    {
+      "id": "lr_minmax11",
+      "family": "LogisticRegression",
+      "scope": "preprocessing",
+      "preprocessing": {
+        "scaling": "minmax",
+        "feature_range": [
+          -1,
+          1
+        ]
+      },
+      "model": {
+        "C": 1.0
+      }
+    },
+    {
+      "id": "lr_pca90",
+      "family": "LogisticRegression",
+      "scope": "pca",
+      "preprocessing": {
+        "pca_variance": 0.9
+      },
+      "model": {
+        "C": 1.0
+      }
+    },
+    {
+      "id": "lr_pca95",
+      "family": "LogisticRegression",
+      "scope": "pca",
+      "preprocessing": {
+        "pca_variance": 0.95
+      },
+      "model": {
+        "C": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+\section{Phân tích các trường hợp dự đoán sai}
+\label{sec:6_6}
+Mô hình dự đoán sai 2.351 mẫu, tương đương 14,44\% tập test, gồm 908 FP và 1.443 FN. FP là nhãn thật \texttt{<=50K} nhưng dự đoán \texttt{>50K}; FN là trường hợp ngược lại. Toàn bộ các bản ghi sai và 14 thuộc tính gốc được lưu trong \texttt{results/step\_06/test\_errors.csv}.
+
+Để xem trường hợp cụ thể, chọn tối đa năm FP có score lớn nhất và năm FN có score nhỏ nhất, phá hòa bằng chỉ số dòng. Đây là các ví dụ được chọn có chủ đích theo score, không đại diện ngẫu nhiên cho toàn bộ lỗi. Cột ``Dòng test'' đếm từ 1 trong dữ liệu đã parse, không tính dòng chú thích và dòng trống của tệp gốc.
+
+\begin{table}[htbp]
+\centering\scriptsize
+\caption{Một số bản ghi dự đoán sai được chọn theo score}\label{tab:test-error-examples}
+\begin{tabular}{lrrrrr}
+\toprule
+Dòng test & Loại & Tuổi & education-num & Giờ/tuần & Score >50K \\
+\midrule
+3606 & FP & 36 & 9 & 90 & 0,9996 \\
+1419 & FP & 55 & 16 & 60 & 0,9822 \\
+519 & FP & 41 & 16 & 60 & 0,9764 \\
+13978 & FP & 57 & 14 & 70 & 0,9628 \\
+12054 & FP & 50 & 13 & 48 & 0,9582 \\
+5954 & FN & 20 & 8 & 35 & 0,0005 \\
+10409 & FN & 22 & 10 & 15 & 0,0008 \\
+6036 & FN & 30 & 9 & 40 & 0,0036 \\
+11822 & FN & 24 & 7 & 40 & 0,0038 \\
+3060 & FN & 22 & 10 & 25 & 0,0049 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[htbp]
+\centering\small
+\caption{Trung vị một số thuộc tính theo nhóm kết quả test}\label{tab:test-error-profiles}
+\begin{tabular}{lrrrr}
+\toprule
+Nhóm & Số mẫu & Tuổi & education-num & Giờ/tuần \\
+\midrule
+TN & 11.527 & 33 & 9 & 40 \\
+FP & 908 & 44 & 13 & 43 \\
+FN & 1.443 & 41 & 10 & 40 \\
+TP & 2.403 & 44 & 13 & 45 \\
+\bottomrule
+\end{tabular}
+\end{table}
+Các trung vị chỉ mô tả nhóm kết quả, không chứng minh một thuộc tính gây ra lỗi và không thay thế phân tích tầm quan trọng đặc trưng. Score từ MLP chưa được kiểm định hiệu chỉnh xác suất, nên một giá trị lớn/nhỏ không được diễn giải thành mức chắc chắn đã được đảm bảo. Không thay đổi mô hình, tiền xử lý hoặc ngưỡng dựa trên các ví dụ test này.

@@ -1,0 +1,5 @@
+\subsection{Xử lý giá trị thiếu}
+\label{subsec:4_3_1}
+Cấu hình cơ sở dùng trung vị cho nhánh số và mức xuất hiện nhiều nhất cho nhánh phân loại. Các lựa chọn khác là trung bình cho biến số hoặc giá trị hằng \texttt{\_\_MISSING\_\_} cho biến phân loại. Dữ liệu thiếu được điền mà không xóa dòng.
+
+Chỉ gọi fit trên tập train đã tách ở bước 3. Các thống kê fitted được đối chiếu lại với train và lưu cùng thông tin phiên bản pipeline. Cột hoàn toàn thiếu được giữ; theo cách xử lý của \texttt{SimpleImputer}, giá trị thay thế cho cột rỗng là 0 khi dùng chiến lược thống kê, hoặc hằng cấu hình khi dùng constant~\cite{sklearn-imputer}.

@@ -1,0 +1,18 @@
+\section{Các chỉ số đánh giá mô hình}
+\label{sec:2_6}
+Chọn \texttt{>50K} làm lớp dương. TP là số mẫu dương dự đoán đúng, FP là số mẫu âm dự đoán nhầm thành dương, FN là số mẫu dương dự đoán nhầm thành âm, TN là số mẫu âm dự đoán đúng. Các chỉ số được tính như sau:
+\[
+\mathrm{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN},\quad
+\mathrm{Precision}=\frac{TP}{TP+FP},\quad
+\mathrm{Recall}=\frac{TP}{TP+FN},
+\]
+\[
+F_1=\frac{2TP}{2TP+FP+FN},\qquad
+\mathrm{Macro\text{-}}F_1=\frac{F_{1,0}+F_{1,1}}{2}.
+\]
+Khi không có dự đoán dương, precision và F1 được quy ước bằng 0. ROC-AUC đánh giá thứ hạng điểm dự đoán qua các ngưỡng thay vì chỉ dùng nhãn tại một ngưỡng. Accuracy dễ tạo ấn tượng cao khi lớp âm chiếm đa số; vì vậy F1 lớp dương được chọn làm tiêu chí chính, đi kèm precision, recall, macro-F1 và ROC-AUC~\cite{sklearn-f1}.
+
+Mỗi cấu hình được báo cáo trung bình và độ lệch chuẩn mẫu (ddof=1) qua ba fold. Độ lệch chuẩn mô tả biến động giữa các fold, không phải khoảng tin cậy hoặc kiểm định ý nghĩa thống kê. Điểm CV cao nhất sau khi thử nhiều cấu hình còn chịu ảnh hưởng của quá trình lựa chọn và không thay thế đánh giá test độc lập.
+
+\paragraph{Các chỉ số bổ sung khi đánh giá test.}\label{sec:metric-specificity-ap}
+Specificity $=TN/(TN+FP)$, FPR $=FP/(TN+FP)$ và FNR $=FN/(TP+FN)$ lần lượt mô tả khả năng nhận diện lớp âm, tỷ lệ báo dương sai và tỷ lệ bỏ sót lớp dương. Balanced accuracy là trung bình recall của hai lớp. Average precision (AP) tóm tắt đường Precision--Recall bằng tổng precision có trọng số theo phần tăng recall; khác cách lấy diện tích hình thang~\cite{sklearn-ap}. Các chỉ số này được tính từ dự đoán test đã khóa, không dùng làm tiêu chí chọn lại mô hình.

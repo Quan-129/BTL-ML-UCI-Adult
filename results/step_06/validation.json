@@ -1,0 +1,51 @@
+{
+  "step": 6,
+  "status": "passed",
+  "checks": [
+    "Frozen pipeline matches the actual stage-5 model byte for byte and by fitted-state hash; MLP-32 and threshold 0.5 unchanged.",
+    "All source split CSVs and 15 feature arrays preserved byte for byte; all 16,281 test rows retained in original order.",
+    "Independently recomputed all confusion counts/rate metrics, rank-based ROC-AUC and tied-score AP; stored curves agree.",
+    "All 2,351 error records align with raw source attributes; 10 examples use declared score/tie rule; outcome summaries cover all rows.",
+    "Independent raw-tuple comparison confirms 22 test rows matching train profiles and 4 matching validation; no test rows removed.",
+    "Verified checksum cache replay without prediction, rejection of altered test/IDs/order/model, zero-positive-prediction handling, and no fitting calls in evaluation module.",
+    "All 48 notebook code cells executed locally without error outputs; 16 chart outputs embedded; validated CV/test caches may be replayed.",
+    "LaTeX 6.5–6.7, metrics theory and appendices populated; source labels/refs/assets and ZIP match; chapters 1/3 preserved. Full typesetting not verified."
+  ],
+  "python_version": "3.14.2",
+  "notebook_code_cells_executed": 48,
+  "selected_model": "mlp_32_reg",
+  "threshold": 0.5,
+  "test_rows": 16281,
+  "confusion_counts": {
+    "tn": 11527,
+    "fp": 908,
+    "fn": 1443,
+    "tp": 2403
+  },
+  "test_metrics": {
+    "accuracy": 0.8555985504575886,
+    "precision": 0.7257626094835398,
+    "recall": 0.624804992199688,
+    "f1": 0.671510409389409,
+    "macro_f1": 0.7894847854858873,
+    "roc_auc": 0.9092778757390746,
+    "average_precision": 0.7741262040874076,
+    "specificity": 0.9269802975472456,
+    "false_positive_rate": 0.07301970245275433,
+    "false_negative_rate": 0.375195007800312,
+    "balanced_accuracy": 0.7758926448734669,
+    "positive_prevalence": 0.23622627602727106,
+    "error_rate": 0.1444014495424114
+  },
+  "snapshot_identical_to_step_5": true,
+  "pipeline_fitted_state_unchanged": true,
+  "classifier_refit_in_evaluation": false,
+  "test_used_for_model_or_threshold_tuning": false,
+  "test_evaluation_runs_in_ledger": 1,
+  "test_result_cache_replay_verified": true,
+  "npy_arrays_preserved_from_step_4": 15,
+  "train_profile_overlap_rows": 22,
+  "validation_profile_overlap_rows": 4,
+  "colab_service_run_verified": false,
+  "latex_compilation_verified": false
+}

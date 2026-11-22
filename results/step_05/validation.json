@@ -1,0 +1,33 @@
+{
+  "step": 5,
+  "status": "passed",
+  "checks": [
+    "Original split CSVs, split manifest and all 15 NumPy arrays from step 4 preserved byte for byte.",
+    "Frozen 3-fold CV covers each raw train row once and keeps duplicate-profile groups disjoint in every fold.",
+    "Recomputed all means/sample SDs from 60 fold scores; train-only fit audits passed; initial six MLP warnings retained and added recipes converged.",
+    "Winner and four family choices match F1 CV ranking/tie policy; validation did not change selection; no test evaluation or threshold tuning.",
+    "All five saved pipelines reload and reproduce every validation prediction/score; independent metric calculations match; fitted state remains unchanged.",
+    "Independent repeat fit of selected MLP on one raw-data fold reproduced all six stored fold metrics.",
+    "Verified completed cache replay and rejection of changed data, source IDs, seed and overlapping fold indices.",
+    "All 40 notebook code cells ran locally; CV was completed fresh then reused by a validated checkpoint; 13 charts embedded without error outputs.",
+    "LaTeX theory/implementation/design/CV-validation sections populated; chapters 1/3 retained; references/assets and ZIP statically valid. Full typesetting not verified."
+  ],
+  "python_version": "3.14.2",
+  "notebook_code_cells_executed": 40,
+  "fresh_cv_candidates": 20,
+  "fresh_cv_fit_count": 60,
+  "pilot_cv_fit_count": 54,
+  "selected_fold_repeat_fit_count": 1,
+  "refit_model_count": 5,
+  "winner_id": "mlp_32_reg",
+  "winner_cv_f1_mean": 0.6813504176310167,
+  "winner_cv_f1_sd": 0.0102716671312712,
+  "winner_validation_f1": 0.6748466257668712,
+  "initial_mlp_convergence_warnings_retained": 6,
+  "added_mlp_convergence_warnings": 0,
+  "test_model_predictions_or_metrics_computed": false,
+  "colab_service_run_verified": false,
+  "latex_compilation_verified": false,
+  "npy_arrays_unchanged_from_step_4": 15,
+  "notebook_reused_verified_completed_cv": true
+}

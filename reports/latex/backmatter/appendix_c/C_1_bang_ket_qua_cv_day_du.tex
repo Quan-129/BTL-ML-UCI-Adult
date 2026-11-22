@@ -1,0 +1,31 @@
+\section{Kết quả CV của toàn bộ cấu hình}
+\label{sec:C_1}
+Bảng liệt kê đủ 20 cấu hình ở vòng cuối. Chỉ số precision, recall và F1 tính cho lớp >50K; SD là độ lệch chuẩn mẫu qua ba fold. Cột CB ghi số fold có cảnh báo hội tụ. Những cấu hình có CB lớn hơn 0 vẫn được báo cáo nhưng không đủ điều kiện khóa lựa chọn.
+\begin{longtable}{lrrrrrr}
+\caption{Toàn bộ kết quả CV ở vòng so sánh cuối}\label{tab:cv-all}\\
+\toprule
+Cấu hình & F1 & SD & Precision & Recall & Accuracy & CB \\
+\midrule
+mlp\_32\_reg & 0,6814 & 0,0103 & 0,7317 & 0,6378 & 0,8564 & 0 \\
+mlp\_64\_reg & 0,6811 & 0,0039 & 0,7392 & 0,6318 & 0,8576 & 0 \\
+rf\_full\_leaf3 & 0,6782 & 0,0012 & 0,7756 & 0,6026 & 0,8623 & 0 \\
+rf\_full\_leaf1 & 0,6734 & 0,0022 & 0,7362 & 0,6204 & 0,8550 & 0 \\
+rf\_depth20\_leaf3 & 0,6718 & 0,0033 & 0,7799 & 0,5900 & 0,8611 & 0 \\
+lr\_missing\_constant & 0,6586 & 0,0062 & 0,7350 & 0,5967 & 0,8510 & 0 \\
+lr\_c1 & 0,6557 & 0,0078 & 0,7315 & 0,5943 & 0,8497 & 0 \\
+lr\_c10 & 0,6547 & 0,0082 & 0,7295 & 0,5940 & 0,8492 & 0 \\
+lr\_minmax11 & 0,6536 & 0,0065 & 0,7317 & 0,5906 & 0,8492 & 0 \\
+lr\_c01 & 0,6531 & 0,0069 & 0,7364 & 0,5868 & 0,8499 & 0 \\
+svm\_c1 & 0,6514 & 0,0028 & 0,7375 & 0,5833 & 0,8496 & 0 \\
+svm\_c01 & 0,6511 & 0,0025 & 0,7389 & 0,5820 & 0,8498 & 0 \\
+svm\_c10 & 0,6511 & 0,0026 & 0,7370 & 0,5831 & 0,8495 & 0 \\
+lr\_pca95 & 0,6476 & 0,0033 & 0,7301 & 0,5819 & 0,8475 & 0 \\
+lr\_minmax01 & 0,6475 & 0,0059 & 0,7276 & 0,5833 & 0,8471 & 0 \\
+mlp\_64 & 0,6453 & 0,0099 & 0,6915 & 0,6061 & 0,8397 & 3 \\
+lr\_pca90 & 0,6427 & 0,0057 & 0,7322 & 0,5728 & 0,8466 & 0 \\
+mlp\_64\_32 & 0,6282 & 0,0191 & 0,6402 & 0,6169 & 0,8243 & 3 \\
+lr\_ordinal & 0,5570 & 0,0067 & 0,7139 & 0,4567 & 0,8251 & 0 \\
+dummy\_majority & 0,0000 & 0,0000 & 0,0000 & 0,0000 & 0,7592 & 0 \\
+\bottomrule
+\end{longtable}
+Các kết quả từng fold, thời gian, cấu hình đầy đủ và cảnh báo gốc nằm trong \texttt{results/step\_05/}. Lịch sử pilot 18 cấu hình được giữ ở \texttt{pilot\_18/}.

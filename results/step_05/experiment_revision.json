@@ -1,0 +1,14 @@
+{
+  "initial_candidates": 18,
+  "initial_cv_fits": 54,
+  "initial_mlp_convergence_warnings": 6,
+  "added_candidates": [
+    "mlp_32_reg",
+    "mlp_64_reg"
+  ],
+  "reason": "Both initial MLP recipes reached 300 epochs; add stronger regularization and looser training-loss stopping tolerance.",
+  "validation_seen_before_revision": false,
+  "test_seen_before_revision": false,
+  "initial_results_retained": "results/step_05/pilot_18/",
+  "note": "Initial recipes remain in the final comparison; this is a CV-informed expansion, not a fully prespecified search."
+}

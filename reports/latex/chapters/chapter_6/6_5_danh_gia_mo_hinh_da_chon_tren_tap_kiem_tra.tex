@@ -1,0 +1,10 @@
+\section{Đánh giá mô hình đã chọn trên tập kiểm tra}
+\label{sec:6_5}
+Mô hình được đánh giá là \texttt{mlp\_32\_reg}, MLP một lớp ẩn 32 nút với $\alpha=0{,}01$, đã được chọn bằng F1 CV ở bước 5. Đầu vào dùng median, mode, one-hot và StandardScaler trên sáu biến số, không PCA. Mô hình đã fit trên 26.049 mẫu train; không fit thêm bằng validation hoặc test. Ngưỡng xác suất lớp \texttt{>50K} giữ nguyên ở 0,5.
+
+Trước khi đánh giá, pipeline và thông tin lựa chọn được sao lưu cố định ở \texttt{artifacts/final/}. SHA-256 và trạng thái fitted được kiểm tra trước/sau dự đoán. Module đánh giá không gọi fit, không tìm ngưỡng tối ưu và không so sánh thêm các mô hình trên test để đổi lựa chọn. Lần chạy lại với cùng snapshot và dữ liệu đọc kết quả đã xác minh thay vì mở một thí nghiệm lựa chọn mới.
+
+Tập test là toàn bộ 16.281 dòng \texttt{adult.test} gốc sau khi chuẩn hóa định dạng như bước 1, gồm 12.435 mẫu \texttt{<=50K} và 3.846 mẫu \texttt{>50K}. Mã hóa nhãn không thay số dòng hay thứ tự. Các mục dưới đây trình bày kết quả test; không gộp chúng với điểm CV/validation.
+
+\input{chapters/chapter_6/6_5_1_cac_chi_so_danh_gia}
+\input{chapters/chapter_6/6_5_2_ma_tran_nham_lan_va_duong_cong_danh_gia}

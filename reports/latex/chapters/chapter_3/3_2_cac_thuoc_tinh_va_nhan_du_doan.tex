@@ -1,0 +1,30 @@
+\section{Các thuộc tính và nhãn dự đoán}
+\label{sec:3_2}
+Bộ dữ liệu gồm sáu thuộc tính dạng số và tám thuộc tính dạng phân loại; biến \texttt{sex} là một trường hợp phân loại nhị phân. Bảng dưới trình bày toàn bộ 14 thuộc tính đầu vào theo mô tả của UCI~\cite{uci-adult}.
+
+\begin{longtable}{p{0.29\textwidth}p{0.25\textwidth}p{0.36\textwidth}}
+\caption{Danh sách thuộc tính của UCI Adult}\label{tab:adult-attributes}\\
+\toprule
+Thuộc tính & Kiểu dữ liệu & Ý nghĩa \\
+\midrule
+\endfirsthead
+\toprule Thuộc tính & Kiểu dữ liệu & Ý nghĩa \\ \midrule
+\endhead
+\texttt{age} & Số & Tuổi \\
+\texttt{workclass} & Phân loại & Nhóm công việc \\
+\texttt{fnlwgt} & Số & Trọng số khảo sát \\
+\texttt{education} & Phân loại & Trình độ học vấn \\
+\texttt{education-num} & Số & Mã mức học vấn \\
+\texttt{marital-status} & Phân loại & Tình trạng hôn nhân \\
+\texttt{occupation} & Phân loại & Nghề nghiệp \\
+\texttt{relationship} & Phân loại & Quan hệ trong hộ gia đình \\
+\texttt{race} & Phân loại & Nhóm chủng tộc \\
+\texttt{sex} & Phân loại nhị phân & Giới tính \\
+\texttt{capital-gain} & Số & Thu nhập từ vốn \\
+\texttt{capital-loss} & Số & Khoản lỗ từ vốn \\
+\texttt{hours-per-week} & Số & Số giờ làm việc mỗi tuần \\
+\texttt{native-country} & Phân loại & Quốc gia xuất xứ \\
+\bottomrule
+\end{longtable}
+
+Nhãn đích là \texttt{income}, gồm hai giá trị: \texttt{<=50K} cho thu nhập năm không quá 50.000 USD và \texttt{>50K} cho thu nhập năm trên 50.000 USD. Trong bước này, nhãn vẫn được giữ dưới dạng chuỗi; chưa mã hóa nhãn thành số.

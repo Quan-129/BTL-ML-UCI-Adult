@@ -1,0 +1,11 @@
+\section{Kiểm tra chất lượng dữ liệu}
+\label{sec:3_3}
+Phần khảo sát này chỉ sử dụng toàn bộ tệp \texttt{adult.data} gốc, được xem là tập dữ liệu phát triển trước khi chia train và validation ở bước tiếp theo. Tập \texttt{adult.test} được giữ riêng và không dùng để tính các bảng hoặc biểu đồ EDA. Các thống kê là mô tả dữ liệu; bước này chưa quyết định siêu tham số, chưa điền thiếu và chưa loại bản ghi.
+
+Các quy tắc kiểm tra bao gồm tuổi lớn hơn 16, trọng số khảo sát lớn hơn 1, mã học vấn từ 1 đến 16, các khoản vốn không âm và số giờ làm việc từ 1 đến 168 mỗi tuần. Hai điều kiện đầu và điều kiện số giờ dương xuất phát từ mô tả trích xuất dữ liệu; cận 168 là kiểm tra tính hợp lý theo số giờ trong tuần. Miền phân loại được đọc từ \texttt{adult.names}. Dữ liệu thiếu được thống kê riêng, không bị gộp thành giá trị ngoài miền.
+
+Theo các quy tắc đã khai báo, tổng số ô ngoài miền phát hiện được là 0. Kết quả này chỉ phản ánh các kiểm tra trên, không chứng minh dữ liệu hoàn toàn không có lỗi.
+
+\input{chapters/chapter_3/3_3_1_gia_tri_thieu_va_gia_tri_khong_hop_le}
+\input{chapters/chapter_3/3_3_2_ban_ghi_trung_lap}
+\input{chapters/chapter_3/3_3_3_gia_tri_ngoai_lai}

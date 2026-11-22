@@ -1,0 +1,49 @@
+{
+  "winner_id": "mlp_32_reg",
+  "threshold": 0.5,
+  "score_kind": "probability",
+  "metrics": {
+    "accuracy": 0.8555985504575886,
+    "precision": 0.7257626094835398,
+    "recall": 0.624804992199688,
+    "f1": 0.671510409389409,
+    "macro_f1": 0.7894847854858873,
+    "roc_auc": 0.9092778757390746,
+    "average_precision": 0.7741262040874076,
+    "specificity": 0.9269802975472456,
+    "false_positive_rate": 0.07301970245275433,
+    "false_negative_rate": 0.375195007800312,
+    "balanced_accuracy": 0.7758926448734669,
+    "positive_prevalence": 0.23622627602727106,
+    "error_rate": 0.1444014495424114
+  },
+  "counts": {
+    "tn": 11527,
+    "fp": 908,
+    "fn": 1443,
+    "tp": 2403,
+    "rows": 16281,
+    "positive_rows": 3846,
+    "negative_rows": 12435,
+    "error_rows": 2351
+  },
+  "identity": {
+    "test_data_sha256": "3d51bf429e119b916fd95371a55112fc18c0b6af4ee3a560d3e48a2919fa3948",
+    "test_source_ids_sha256": "20e92a2db2f048ffbc8684649bb07cc87c1f9018404dd5d9389fab8ecb9b68b1",
+    "selection_snapshot_sha256": "3c8c347792b70bc8da7f6a4885e3f650211bbb79f91330edfbb2583bed78d948",
+    "pipeline_sha256": "62a88d5517e33b030b098e82dc60aed5c2d86dfaa440b9b5f4fb536eae5c5065",
+    "evaluation_source_sha256": "4b51af00421768232d31d1a2cf351b8c144d07f2dbc764fcd39d521949607272",
+    "sklearn": "1.9.0",
+    "numpy": "2.4.4"
+  },
+  "pipeline_fitted_state_unchanged": true,
+  "test_frame_unchanged": true,
+  "test_evaluation_used_for_tuning": false,
+  "classifier_refit_in_evaluation": false,
+  "versions": {
+    "python": "3.14.2",
+    "sklearn": "1.9.0",
+    "numpy": "2.4.4",
+    "pandas": "3.0.5"
+  }
+}

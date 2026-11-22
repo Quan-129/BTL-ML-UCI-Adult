@@ -1,0 +1,24 @@
+{
+  "identity": {
+    "train": "468656037c77bcc3b0b1b269d4d1fda747a0893620c3c9ba631a31623257518d",
+    "cv": "e5e75d9a0a2e14514c18f2e441f799e22a0064942d581ed14428f4c6deda051e",
+    "candidates": "cb0fbd7b47eba265b40b90a9589ea8f962cf89a1153a1faeea36f9128590caf3",
+    "sklearn": "1.9.0",
+    "numpy": "2.4.4",
+    "pandas": "3.0.5",
+    "python": "3.14.2",
+    "source_hashes": {
+      "training.py": "5ca4f6c3eb98a7be1d768033e966a52d308bb18eaf87e511dec5fbc9d2fa5158",
+      "preprocessing.py": "56857d8de93dd666ef5f055f6b2b445bf7644ef09e0dc051572c8cfd13fb732e",
+      "splitting.py": "ce2783729615056a22f7102f28b954656448c5f6b9a539d893de3d418477d108",
+      "data_loader.py": "e2fe5cfcaef352ccd998045e1010a4d8d014908d82773510877b861f29e62cc3"
+    }
+  },
+  "files": {
+    "results/step_05/cv_folds.csv": "e878276065054c1eea0772d83daffe2b72c0b588e18f12e5cbfaf821950cc517",
+    "results/step_05/cv_summary.csv": "dfb30c00ebd6c4f48776b7ca6600b4db1c2843a8d223e3d5d8521a8d75489fb7",
+    "results/step_05/cv_fold_summary.csv": "831ea4bb0d1cabd7ceaf864500d3975828c4c4caf092c07f7128ff94c928beaa",
+    "results/step_05/fit_audits.json": "ad069ba62c186a0cc85ab666f2edf4fabe6715743bef99cd8357bacae75e913e",
+    "results/step_05/selection_cv.json": "e0b97950ea7c6f6e23e2a45c82b70f22c2c060d15bec8bc4092274abb6e00399"
+  }
+}

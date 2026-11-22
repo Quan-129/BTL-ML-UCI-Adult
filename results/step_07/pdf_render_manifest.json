@@ -1,0 +1,537 @@
+{
+  "engine": "ReportLab from LaTeX source",
+  "latex_compiled": false,
+  "pages": 53,
+  "source_files": [
+    "backmatter/appendix_a/A_1_chay_toan_bo_notebook_tren_google_colab.tex",
+    "backmatter/appendix_a/A_2_cau_truc_thu_muc_nop_bai.tex",
+    "backmatter/appendix_a/A_3_danh_sach_tep_dac_trung_va_cach_su_dung.tex",
+    "backmatter/appendix_a/A_4_lien_ket_ma_nguon_notebook_va_du_lieu.tex",
+    "backmatter/appendix_a/appendix_a.tex",
+    "backmatter/appendix_b/B_1_bang_phan_cong_va_ty_le_dong_gop.tex",
+    "backmatter/appendix_b/B_2_tien_do_thuc_hien_cua_nhom.tex",
+    "backmatter/appendix_b/appendix_b.tex",
+    "backmatter/appendix_c/C_1_bang_ket_qua_cv_day_du.tex",
+    "backmatter/appendix_c/appendix_c.tex",
+    "backmatter/references.tex",
+    "chapters/chapter_1/1_1_bai_toan_du_doan_thu_nhap.tex",
+    "chapters/chapter_1/1_2_muc_tieu_thuc_hien.tex",
+    "chapters/chapter_1/1_3_pham_vi_nghien_cuu.tex",
+    "chapters/chapter_1/1_4_yeu_cau_cua_bai_tap_lon.tex",
+    "chapters/chapter_1/1_5_bo_cuc_bao_cao.tex",
+    "chapters/chapter_1/chapter_1.tex",
+    "chapters/chapter_2/2_1_bai_toan_phan_loai_nhi_phan.tex",
+    "chapters/chapter_2/2_2_1_dien_gia_tri_thieu.tex",
+    "chapters/chapter_2/2_2_2_ma_hoa_bien_phan_loai.tex",
+    "chapters/chapter_2/2_2_3_chuan_hoa_bien_so.tex",
+    "chapters/chapter_2/2_2_cac_ky_thuat_tien_xu_ly_du_lieu_bang.tex",
+    "chapters/chapter_2/2_3_giam_chieu_bang_pca.tex",
+    "chapters/chapter_2/2_4_1_logistic_regression.tex",
+    "chapters/chapter_2/2_4_2_support_vector_machine.tex",
+    "chapters/chapter_2/2_4_3_random_forest.tex",
+    "chapters/chapter_2/2_4_cac_mo_hinh_hoc_may_truyen_thong.tex",
+    "chapters/chapter_2/2_5_mang_no_ron_nhieu_lop_mlp.tex",
+    "chapters/chapter_2/2_6_cac_chi_so_danh_gia_mo_hinh.tex",
+    "chapters/chapter_2/chapter_2.tex",
+    "chapters/chapter_3/3_1_gioi_thieu_tap_du_lieu_uci_adult.tex",
+    "chapters/chapter_3/3_2_cac_thuoc_tinh_va_nhan_du_doan.tex",
+    "chapters/chapter_3/3_3_1_gia_tri_thieu_va_gia_tri_khong_hop_le.tex",
+    "chapters/chapter_3/3_3_2_ban_ghi_trung_lap.tex",
+    "chapters/chapter_3/3_3_3_gia_tri_ngoai_lai.tex",
+    "chapters/chapter_3/3_3_kiem_tra_chat_luong_du_lieu.tex",
+    "chapters/chapter_3/3_4_phan_phoi_nhan_va_muc_do_mat_can_bang.tex",
+    "chapters/chapter_3/3_5_phan_tich_cac_bien_so.tex",
+    "chapters/chapter_3/3_6_phan_tich_cac_bien_phan_loai.tex",
+    "chapters/chapter_3/3_7_nhan_xet_eda_va_dinh_huong_xu_ly.tex",
+    "chapters/chapter_3/chapter_3.tex",
+    "chapters/chapter_4/4_1_so_do_tong_the_cua_pipeline.tex",
+    "chapters/chapter_4/4_2_1_tai_du_lieu_tu_nguon_cong_khai.tex",
+    "chapters/chapter_4/4_2_2_chia_tap_huan_luyen_kiem_dinh_va_kiem_tra.tex",
+    "chapters/chapter_4/4_2_3_ngan_ngua_ro_ri_du_lieu.tex",
+    "chapters/chapter_4/4_2_tai_du_lieu_va_phan_chia_cac_tap.tex",
+    "chapters/chapter_4/4_3_1_xu_ly_gia_tri_thieu.tex",
+    "chapters/chapter_4/4_3_2_ma_hoa_bien_phan_loai.tex",
+    "chapters/chapter_4/4_3_3_chuan_hoa_bien_so.tex",
+    "chapters/chapter_4/4_3_tien_xu_ly_du_lieu.tex",
+    "chapters/chapter_4/4_4_giam_chieu_dac_trung_bang_pca.tex",
+    "chapters/chapter_4/4_5_huan_luyen_cac_mo_hinh_truyen_thong.tex",
+    "chapters/chapter_4/4_6_xay_dung_mo_hinh_mlp_de_so_sanh.tex",
+    "chapters/chapter_4/4_7_cau_hinh_cac_buoc_cua_pipeline.tex",
+    "chapters/chapter_4/4_8_luu_dac_trung_va_thong_tin_di_kem.tex",
+    "chapters/chapter_4/chapter_4.tex",
+    "chapters/chapter_5/5_1_moi_truong_thuc_nghiem_va_kha_nang_tai_lap.tex",
+    "chapters/chapter_5/5_2_giao_thuc_danh_gia_va_chi_so_lua_chon.tex",
+    "chapters/chapter_5/5_3_mo_hinh_co_so_va_cac_sieu_tham_so_khao_sat.tex",
+    "chapters/chapter_5/5_4_thi_nghiem_so_sanh_cac_mo_hinh_truyen_thong.tex",
+    "chapters/chapter_5/5_5_thi_nghiem_so_sanh_cac_cach_tien_xu_ly.tex",
+    "chapters/chapter_5/5_6_thi_nghiem_anh_huong_cua_pca.tex",
+    "chapters/chapter_5/5_7_thi_nghiem_so_sanh_pipeline_truyen_thong_va_mlp.tex",
+    "chapters/chapter_5/5_8_nguyen_tac_chon_mo_hinh_va_danh_gia_cuoi_cung.tex",
+    "chapters/chapter_5/chapter_5.tex",
+    "chapters/chapter_6/6_1_ket_qua_so_sanh_cac_mo_hinh_truyen_thong.tex",
+    "chapters/chapter_6/6_2_anh_huong_cua_cac_cach_tien_xu_ly.tex",
+    "chapters/chapter_6/6_3_anh_huong_cua_giam_chieu_bang_pca.tex",
+    "chapters/chapter_6/6_4_so_sanh_pipeline_truyen_thong_va_mlp.tex",
+    "chapters/chapter_6/6_5_1_cac_chi_so_danh_gia.tex",
+    "chapters/chapter_6/6_5_2_ma_tran_nham_lan_va_duong_cong_danh_gia.tex",
+    "chapters/chapter_6/6_5_danh_gia_mo_hinh_da_chon_tren_tap_kiem_tra.tex",
+    "chapters/chapter_6/6_6_phan_tich_cac_truong_hop_du_doan_sai.tex",
+    "chapters/chapter_6/6_7_nhan_xet_tong_hop_ve_cac_ket_qua.tex",
+    "chapters/chapter_6/chapter_6.tex",
+    "chapters/chapter_7/7_1_ket_qua_dat_duoc.tex",
+    "chapters/chapter_7/7_2_han_che_cua_nghien_cuu.tex",
+    "chapters/chapter_7/7_3_huong_phat_trien.tex",
+    "chapters/chapter_7/chapter_7.tex",
+    "frontmatter/abbreviations.tex",
+    "frontmatter/abstract.tex",
+    "frontmatter/acknowledgements.tex",
+    "frontmatter/contents.tex",
+    "frontmatter/cover.tex",
+    "frontmatter/list_of_figures.tex",
+    "frontmatter/list_of_tables.tex"
+  ],
+  "math_image_count": 52,
+  "math_failures": [],
+  "headings": [
+    {
+      "title": "Lời cảm ơn",
+      "pdf_page": 2,
+      "display_page": "i"
+    },
+    {
+      "title": "Tóm tắt",
+      "pdf_page": 3,
+      "display_page": "ii"
+    },
+    {
+      "title": "Mục lục",
+      "pdf_page": 4,
+      "display_page": "iii"
+    },
+    {
+      "title": "Danh mục từ viết tắt",
+      "pdf_page": 8,
+      "display_page": "vii"
+    },
+    {
+      "title": "Danh mục hình",
+      "pdf_page": 9,
+      "display_page": "viii"
+    },
+    {
+      "title": "Danh mục bảng",
+      "pdf_page": 10,
+      "display_page": "ix"
+    },
+    {
+      "title": "Chương 1. Giới thiệu đề tài",
+      "pdf_page": 12,
+      "display_page": "1"
+    },
+    {
+      "title": "1.1 Bài toán dự đoán thu nhập",
+      "pdf_page": 12,
+      "display_page": "1"
+    },
+    {
+      "title": "1.2 Mục tiêu thực hiện",
+      "pdf_page": 12,
+      "display_page": "1"
+    },
+    {
+      "title": "1.3 Phạm vi nghiên cứu",
+      "pdf_page": 13,
+      "display_page": "2"
+    },
+    {
+      "title": "1.4 Yêu cầu của bài tập lớn",
+      "pdf_page": 13,
+      "display_page": "2"
+    },
+    {
+      "title": "1.5 Bố cục báo cáo",
+      "pdf_page": 14,
+      "display_page": "3"
+    },
+    {
+      "title": "Chương 2. Cơ sở lý thuyết",
+      "pdf_page": 15,
+      "display_page": "4"
+    },
+    {
+      "title": "2.1 Bài toán phân loại nhị phân",
+      "pdf_page": 15,
+      "display_page": "4"
+    },
+    {
+      "title": "2.2 Các kỹ thuật tiền xử lý dữ liệu bảng",
+      "pdf_page": 15,
+      "display_page": "4"
+    },
+    {
+      "title": "2.2.1 Điền giá trị thiếu",
+      "pdf_page": 15,
+      "display_page": "4"
+    },
+    {
+      "title": "2.2.2 Mã hóa biến phân loại",
+      "pdf_page": 15,
+      "display_page": "4"
+    },
+    {
+      "title": "2.2.3 Chuẩn hóa biến số",
+      "pdf_page": 15,
+      "display_page": "4"
+    },
+    {
+      "title": "2.3 Giảm chiều bằng PCA",
+      "pdf_page": 16,
+      "display_page": "5"
+    },
+    {
+      "title": "2.4 Các mô hình học máy truyền thống",
+      "pdf_page": 16,
+      "display_page": "5"
+    },
+    {
+      "title": "2.4.1 Logistic Regression",
+      "pdf_page": 16,
+      "display_page": "5"
+    },
+    {
+      "title": "2.4.2 Support Vector Machine",
+      "pdf_page": 17,
+      "display_page": "6"
+    },
+    {
+      "title": "2.4.3 Random Forest",
+      "pdf_page": 17,
+      "display_page": "6"
+    },
+    {
+      "title": "2.5 Mạng nơ-ron nhiều lớp MLP",
+      "pdf_page": 17,
+      "display_page": "6"
+    },
+    {
+      "title": "2.6 Các chỉ số đánh giá mô hình",
+      "pdf_page": 18,
+      "display_page": "7"
+    },
+    {
+      "title": "Chương 3. Dữ liệu và phân tích khám phá",
+      "pdf_page": 19,
+      "display_page": "8"
+    },
+    {
+      "title": "3.1 Giới thiệu tập dữ liệu UCI Adult",
+      "pdf_page": 19,
+      "display_page": "8"
+    },
+    {
+      "title": "3.2 Các thuộc tính và nhãn dự đoán",
+      "pdf_page": 19,
+      "display_page": "8"
+    },
+    {
+      "title": "3.3 Kiểm tra chất lượng dữ liệu",
+      "pdf_page": 20,
+      "display_page": "9"
+    },
+    {
+      "title": "3.3.1 Giá trị thiếu và giá trị không hợp lệ",
+      "pdf_page": 21,
+      "display_page": "10"
+    },
+    {
+      "title": "3.3.2 Bản ghi trùng lặp",
+      "pdf_page": 21,
+      "display_page": "10"
+    },
+    {
+      "title": "3.3.3 Giá trị ngoại lai",
+      "pdf_page": 22,
+      "display_page": "11"
+    },
+    {
+      "title": "3.4 Phân phối nhãn và mức độ mất cân bằng",
+      "pdf_page": 23,
+      "display_page": "12"
+    },
+    {
+      "title": "3.5 Phân tích các biến số",
+      "pdf_page": 24,
+      "display_page": "13"
+    },
+    {
+      "title": "3.6 Phân tích các biến phân loại",
+      "pdf_page": 25,
+      "display_page": "14"
+    },
+    {
+      "title": "3.7 Nhận xét EDA và định hướng xử lý",
+      "pdf_page": 28,
+      "display_page": "17"
+    },
+    {
+      "title": "Chương 4. Xây dựng pipeline học máy",
+      "pdf_page": 29,
+      "display_page": "18"
+    },
+    {
+      "title": "4.1 Sơ đồ tổng thể của pipeline",
+      "pdf_page": 29,
+      "display_page": "18"
+    },
+    {
+      "title": "4.2 Tải dữ liệu và phân chia các tập",
+      "pdf_page": 30,
+      "display_page": "19"
+    },
+    {
+      "title": "4.2.1 Tải dữ liệu từ nguồn công khai",
+      "pdf_page": 30,
+      "display_page": "19"
+    },
+    {
+      "title": "4.2.2 Chia tập huấn luyện, kiểm định và kiểm tra",
+      "pdf_page": 30,
+      "display_page": "19"
+    },
+    {
+      "title": "4.2.3 Ngăn ngừa rò rỉ dữ liệu",
+      "pdf_page": 31,
+      "display_page": "20"
+    },
+    {
+      "title": "4.3 Tiền xử lý dữ liệu",
+      "pdf_page": 32,
+      "display_page": "21"
+    },
+    {
+      "title": "4.3.1 Xử lý giá trị thiếu",
+      "pdf_page": 32,
+      "display_page": "21"
+    },
+    {
+      "title": "4.3.2 Mã hóa biến phân loại",
+      "pdf_page": 32,
+      "display_page": "21"
+    },
+    {
+      "title": "4.3.3 Chuẩn hóa biến số",
+      "pdf_page": 32,
+      "display_page": "21"
+    },
+    {
+      "title": "4.4 Giảm chiều đặc trưng bằng PCA",
+      "pdf_page": 33,
+      "display_page": "22"
+    },
+    {
+      "title": "4.5 Huấn luyện các mô hình truyền thống",
+      "pdf_page": 33,
+      "display_page": "22"
+    },
+    {
+      "title": "4.6 Xây dựng mô hình MLP để so sánh",
+      "pdf_page": 34,
+      "display_page": "23"
+    },
+    {
+      "title": "4.7 Cấu hình các bước của pipeline",
+      "pdf_page": 34,
+      "display_page": "23"
+    },
+    {
+      "title": "4.8 Lưu đặc trưng và thông tin đi kèm",
+      "pdf_page": 34,
+      "display_page": "23"
+    },
+    {
+      "title": "Chương 5. Thiết kế thí nghiệm",
+      "pdf_page": 36,
+      "display_page": "25"
+    },
+    {
+      "title": "5.1 Môi trường thực nghiệm và khả năng tái lập",
+      "pdf_page": 36,
+      "display_page": "25"
+    },
+    {
+      "title": "5.2 Giao thức đánh giá và chỉ số lựa chọn",
+      "pdf_page": 36,
+      "display_page": "25"
+    },
+    {
+      "title": "5.3 Mô hình cơ sở và các siêu tham số khảo sát",
+      "pdf_page": 36,
+      "display_page": "25"
+    },
+    {
+      "title": "5.4 Thí nghiệm so sánh các mô hình truyền thống",
+      "pdf_page": 37,
+      "display_page": "26"
+    },
+    {
+      "title": "5.5 Thí nghiệm so sánh các cách tiền xử lý",
+      "pdf_page": 37,
+      "display_page": "26"
+    },
+    {
+      "title": "5.6 Thí nghiệm ảnh hưởng của PCA",
+      "pdf_page": 38,
+      "display_page": "27"
+    },
+    {
+      "title": "5.7 Thí nghiệm so sánh pipeline truyền thống và MLP",
+      "pdf_page": 38,
+      "display_page": "27"
+    },
+    {
+      "title": "5.8 Nguyên tắc chọn mô hình và đánh giá cuối cùng",
+      "pdf_page": 38,
+      "display_page": "27"
+    },
+    {
+      "title": "Chương 6. Kết quả thực nghiệm và thảo luận",
+      "pdf_page": 39,
+      "display_page": "28"
+    },
+    {
+      "title": "6.1 Kết quả so sánh các mô hình truyền thống",
+      "pdf_page": 39,
+      "display_page": "28"
+    },
+    {
+      "title": "6.2 Ảnh hưởng của các cách tiền xử lý",
+      "pdf_page": 40,
+      "display_page": "29"
+    },
+    {
+      "title": "6.3 Ảnh hưởng của giảm chiều bằng PCA",
+      "pdf_page": 41,
+      "display_page": "30"
+    },
+    {
+      "title": "6.4 So sánh pipeline truyền thống và MLP",
+      "pdf_page": 42,
+      "display_page": "31"
+    },
+    {
+      "title": "6.5 Đánh giá mô hình đã chọn trên tập kiểm tra",
+      "pdf_page": 43,
+      "display_page": "32"
+    },
+    {
+      "title": "6.5.1 Các chỉ số đánh giá",
+      "pdf_page": 43,
+      "display_page": "32"
+    },
+    {
+      "title": "6.5.2 Ma trận nhầm lẫn và đường cong đánh giá",
+      "pdf_page": 44,
+      "display_page": "33"
+    },
+    {
+      "title": "6.6 Phân tích các trường hợp dự đoán sai",
+      "pdf_page": 45,
+      "display_page": "34"
+    },
+    {
+      "title": "6.7 Nhận xét tổng hợp về các kết quả",
+      "pdf_page": 46,
+      "display_page": "35"
+    },
+    {
+      "title": "Chương 7. Kết luận và hướng phát triển",
+      "pdf_page": 47,
+      "display_page": "36"
+    },
+    {
+      "title": "7.1 Kết quả đạt được",
+      "pdf_page": 47,
+      "display_page": "36"
+    },
+    {
+      "title": "7.2 Hạn chế của nghiên cứu",
+      "pdf_page": 47,
+      "display_page": "36"
+    },
+    {
+      "title": "7.3 Hướng phát triển",
+      "pdf_page": 48,
+      "display_page": "37"
+    },
+    {
+      "title": "Tài liệu tham khảo",
+      "pdf_page": 49,
+      "display_page": "38"
+    },
+    {
+      "title": "Phụ lục A. Hướng dẫn chạy và tổ chức sản phẩm",
+      "pdf_page": 50,
+      "display_page": "39"
+    },
+    {
+      "title": "A.1 Chạy notebook trên Google Colab",
+      "pdf_page": 50,
+      "display_page": "39"
+    },
+    {
+      "title": "A.2 Cấu trúc thư mục nộp bài",
+      "pdf_page": 50,
+      "display_page": "39"
+    },
+    {
+      "title": "A.3 Danh sách tệp đặc trưng và cách sử dụng",
+      "pdf_page": 50,
+      "display_page": "39"
+    },
+    {
+      "title": "A.4 Dữ liệu và mã nguồn",
+      "pdf_page": 51,
+      "display_page": "40"
+    },
+    {
+      "title": "Phụ lục B. Phân công công việc",
+      "pdf_page": 52,
+      "display_page": "41"
+    },
+    {
+      "title": "B.1 Bảng phân công công việc",
+      "pdf_page": 52,
+      "display_page": "41"
+    },
+    {
+      "title": "B.2 Quy trình thực hiện",
+      "pdf_page": 52,
+      "display_page": "41"
+    },
+    {
+      "title": "Phụ lục C. Bảng kết quả đối chiếu",
+      "pdf_page": 53,
+      "display_page": "42"
+    },
+    {
+      "title": "C.1 Kết quả CV của toàn bộ cấu hình",
+      "pdf_page": 53,
+      "display_page": "42"
+    }
+  ],
+  "block_counts": {
+    "arabic": 1,
+    "bib": 15,
+    "bullet": 56,
+    "cover": 1,
+    "equation": 6,
+    "figure": 15,
+    "heading": 85,
+    "pagebreak": 19,
+    "paragraph": 174,
+    "table": 24,
+    "toc": 3
+  },
+  "pdf_path": "reports/BTL_ML_Bao_Cao.pdf",
+  "pdf_sha256": "b49349db538362228f1c147c3c34eac026caa9d13709c4a3a13673cc56ec37b7"
+}

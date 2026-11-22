@@ -1,0 +1,7 @@
+\section{Phạm vi nghiên cứu}
+\label{sec:1_3}
+Đề tài sử dụng dữ liệu dạng bảng UCI Adult và tập trung vào bài toán phân loại nhị phân theo ngưỡng thu nhập 50.000 USD mỗi năm. Phạm vi đầu vào ban đầu gồm 14 thuộc tính được công bố trong bộ dữ liệu. Cả 14 thuộc tính được giữ làm đầu vào; các phép biến đổi và cấu hình được trình bày trong phần khảo sát dữ liệu và xây dựng pipeline.
+
+Các thí nghiệm được tổ chức trên dữ liệu UCI với hai tệp gốc \texttt{adult.data} và \texttt{adult.test}. Phần dữ liệu phục vụ huấn luyện và lựa chọn cấu hình được phân chia theo giao thức trình bày ở các chương sau. Tập kiểm tra được dành cho đánh giá cuối sau khi đã chốt mô hình và cấu hình; các bộ biến đổi dữ liệu chỉ được học từ phần dữ liệu huấn luyện tương ứng.
+
+Nhóm triển khai bằng Python, sử dụng Google Colab làm giao diện thực thi chính. Nội dung nghiên cứu bao gồm EDA, xử lý giá trị thiếu, mã hóa thuộc tính phân loại, chuẩn hóa, giảm chiều PCA và so sánh các mô hình đã nêu trong mục tiêu. MLP được thực hiện như phần mở rộng để đối chiếu với pipeline truyền thống. Phần đánh giá tập trung vào chất lượng phân loại và phân tích các lỗi dự đoán trong phạm vi dữ liệu này.

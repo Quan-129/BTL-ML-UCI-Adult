@@ -1,0 +1,9 @@
+\section{Tiền xử lý dữ liệu}
+\label{sec:4_3}
+Hiện thực sử dụng \texttt{Pipeline} và \texttt{ColumnTransformer}. Một lớp thích nghi kiểm tra đúng tên 14 thuộc tính, giữ thứ tự cột và chuyển các giá trị thiếu sang dạng tương thích với scikit-learn. Nếu có nhãn hoặc cột metadata trong đầu vào, pipeline báo lỗi thay vì đưa chúng vào đặc trưng.
+
+Tất cả 14 thuộc tính được giữ trong bước này, bao gồm \texttt{fnlwgt} như một thuộc tính đầu vào; nó không được dùng làm trọng số mẫu. Hai trường \texttt{education} và \texttt{education-num} cùng mô tả học vấn nhưng được giữ theo schema ban đầu. Chưa thực hiện loại thuộc tính hoặc chọn đặc trưng theo nhãn.
+
+\input{chapters/chapter_4/4_3_1_xu_ly_gia_tri_thieu}
+\input{chapters/chapter_4/4_3_2_ma_hoa_bien_phan_loai}
+\input{chapters/chapter_4/4_3_3_chuan_hoa_bien_so}

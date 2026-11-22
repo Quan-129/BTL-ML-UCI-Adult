@@ -1,0 +1,10 @@
+\subsection{Logistic Regression}
+\label{subsec:2_4_1}
+Với vector đặc trưng $\mathbf{x}$, mô hình ước lượng xác suất lớp dương bằng
+\[
+p(y=1\mid\mathbf{x})=\sigma(\mathbf{w}^{T}\mathbf{x}+b),\qquad
+\sigma(z)=\frac{1}{1+e^{-z}}.
+\]
+Tham số được học bằng cách giảm hàm mất mát logarit có phạt L2. Tham số $C$ điều khiển nghịch đảo mức regularization: giá trị nhỏ tương ứng với phạt mạnh hơn trong cùng cách triển khai. Thí nghiệm sử dụng bộ giải lbfgs và thử $C\in\{0{,}1;1;10\}$~\cite{sklearn-logistic}. Nhãn dự đoán dùng ngưỡng xác suất 0,5; không tối ưu ngưỡng trên validation hoặc test.
+
+Mô hình có thời gian huấn luyện tương đối thấp và tạo mốc so sánh dễ giải thích. Tuy nhiên, một biên tuyến tính trên đặc trưng đã mã hóa có thể chưa biểu diễn đầy đủ các quan hệ phi tuyến giữa các thuộc tính của Adult.

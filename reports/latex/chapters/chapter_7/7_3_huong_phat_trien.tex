@@ -1,0 +1,11 @@
+\section{Hướng phát triển}
+\label{sec:7_3}
+Các hướng mở rộng sau chỉ là đề xuất, chưa phải các thí nghiệm đã thực hiện:
+\begin{itemize}
+\item Mở rộng lưới tham số, thử nhiều seed và thiết kế CV theo nhóm lồng nhau để đánh giá độ ổn định và ảnh hưởng của quá trình lựa chọn.
+\item Khảo sát trọng số lớp, hiệu chỉnh xác suất và tối ưu ngưỡng bằng dữ liệu train/validation theo nhóm, căn cứ vào chi phí FP/FN được xác định trước. Một lần đánh giá cuối mới cần có dữ liệu giữ lại mới, không tận dụng test đã xem để tinh chỉnh.
+\item Đối chiếu vai trò của \texttt{fnlwgt}, hai trường học vấn và các thuộc tính vốn; tách rõ sử dụng trọng số khảo sát với sử dụng chúng làm đặc trưng. Đánh giá lựa chọn trên dữ liệu phát triển và kiểm tra trên một holdout mới có kiểm soát trùng hồ sơ.
+\item Đánh giá độ tin cậy, hiệu chỉnh score, kết quả theo nhóm và mức dịch chuyển dữ liệu trước khi cân nhắc một ứng dụng thực tế. Các phân tích giải thích cần phân biệt mối liên hệ quan sát với tác động nhân quả.
+\item Đóng gói môi trường thực nghiệm, cố định phiên bản thư viện và tự động hóa các bước kiểm tra để tăng khả năng tái lập.
+\end{itemize}
+Các cải tiến cần được tổ chức như một nghiên cứu tiếp theo với giao thức đánh giá mới. Trong báo cáo hiện tại, mô hình và kết quả test ở chương 6 được giữ cố định.

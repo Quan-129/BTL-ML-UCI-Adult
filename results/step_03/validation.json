@@ -1,0 +1,28 @@
+{
+  "step": 3,
+  "status": "passed",
+  "checks": [
+    "Manifest chia đủ mỗi dòng development đúng một lần; train/validation không chung chỉ số hoặc mã nhóm.",
+    "Đối chiếu độc lập bằng tuple 14 thuộc tính xác nhận không có đầu vào giống nhau giữa train và validation.",
+    "Sáu CSV dữ liệu/metadata được đọc lại đúng kiểu và missing; mọi dòng khớp nguồn; test giữ nguyên giá trị và thứ tự.",
+    "Tất cả nhóm trùng, gồm nhóm cùng đầu vào khác nhãn, được giữ trong một phía.",
+    "Các tình huống sai bị từ chối: nhóm rỗng/chứa nhãn, đổi seed, dữ liệu đổi, chỉ số lặp và tách nhóm trùng; fingerprint nhận biết cả thay đổi phần lẻ.",
+    "Bộ dữ liệu nhỏ kiểm tra tạo mới và replay ổn định, giữ chung nhóm cả khi có nhãn khác nhau.",
+    "Bảng quy mô không tính nhãn/số nhóm của test; chỉ mô tả cân bằng nhãn train/validation.",
+    "Toàn bộ 24 ô Python chạy cục bộ không lỗi; notebook chứa tám biểu đồ, manifest và module tự chuẩn bị.",
+    "Chương 1 và 3 giữ nguyên; các phần chia tập có nội dung; tham chiếu và ZIP LaTeX hợp lệ theo kiểm tra tĩnh."
+  ],
+  "python_version": "3.14.2",
+  "notebook_code_cells_executed": 24,
+  "train_rows": 26049,
+  "validation_rows": 6512,
+  "test_rows": 16281,
+  "train_validation_group_overlap": 0,
+  "rows_removed": 0,
+  "test_used_to_choose_split": false,
+  "test_label_statistics_computed": false,
+  "source_replay": "frozen_manifest",
+  "colab_service_run_verified": false,
+  "latex_compilation_verified": false,
+  "model_features_exported": false
+}

@@ -1,0 +1,5 @@
+\subsection{Mã hóa biến phân loại}
+\label{subsec:2_2_2}
+One-hot encoding biểu diễn mỗi mức phân loại bằng một cột chỉ báo. Cách này cho phép mô hình sử dụng các mức của một biến mà không áp đặt thứ tự số học giữa chúng. Tập mức và thứ tự các cột được xác định từ train. Với mức chưa thấy khi fit, cấu hình \texttt{handle\_unknown=ignore} tạo các giá trị 0 cho nhánh one-hot của biến đó~\cite{sklearn-onehot}.
+
+Ordinal encoding gán một mã số cho mỗi mức. Khi mức phân loại không có thứ tự tự nhiên, khoảng cách giữa các mã không mang sẵn ý nghĩa về dữ liệu; vì vậy cần xem nó là một lựa chọn để thực nghiệm, không mặc định tốt hơn one-hot. Trong pipeline của đề tài, mã $-1$ được dành cho mức chưa thấy khi dùng ordinal. Cả hai encoder đều được học sau bước điền thiếu và chỉ từ train.

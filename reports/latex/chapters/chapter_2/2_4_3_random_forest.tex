@@ -1,0 +1,5 @@
+\subsection{Random Forest}
+\label{subsec:2_4_3}
+Random Forest kết hợp nhiều cây quyết định được học trên các mẫu bootstrap và các tập thuộc tính ứng viên ngẫu nhiên. Trong triển khai này, xác suất lớp dương là trung bình xác suất từ các cây: $\hat p(1\mid\mathbf{x})=B^{-1}\sum_{b=1}^{B}p_b(1\mid\mathbf{x})$. Mô hình có thể biểu diễn tương tác phi tuyến mà không giả định một biên phân tách tuyến tính~\cite{sklearn-rf}.
+
+Thí nghiệm dùng 150 cây, \texttt{max\_features=sqrt} và ba cấu hình: độ sâu không giới hạn với lá tối thiểu 1 mẫu; độ sâu không giới hạn với lá tối thiểu 3 mẫu; độ sâu tối đa 20 với lá tối thiểu 3 mẫu. Các thiết lập khác được giữ cố định. Lá nhỏ và cây sâu có thể tăng khả năng khớp train nhưng cũng tăng chi phí bộ nhớ và nguy cơ quá khớp; kết quả CV được dùng để lựa chọn trong phạm vi đã khảo sát.

@@ -1,0 +1,15 @@
+﻿column,rule,invalid_count,missing_count
+age,> 16,0,0
+fnlwgt,> 1,0,0
+education-num,1 to 16,0,0
+capital-gain,>= 0,0,0
+capital-loss,>= 0,0,0
+hours-per-week,> 0 and <= 168,0,0
+workclass,listed in adult.names,0,1836
+education,listed in adult.names,0,0
+marital-status,listed in adult.names,0,0
+occupation,listed in adult.names,0,1843
+relationship,listed in adult.names,0,0
+race,listed in adult.names,0,0
+sex,listed in adult.names,0,0
+native-country,listed in adult.names,0,583

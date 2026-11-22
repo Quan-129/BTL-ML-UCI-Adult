@@ -1,0 +1,5 @@
+\section{Bài toán phân loại nhị phân}
+\label{sec:2_1}
+Trong học có giám sát, mỗi mẫu gồm vector thuộc tính $\mathbf{x}$ và nhãn $y$. Với bài toán phân loại nhị phân, $y\in\{0,1\}$. Mô hình học từ các mẫu train để dự đoán nhãn hoặc điểm cho một mẫu mới.
+
+Trong đề tài này, nhãn \texttt{<=50K} được ánh xạ thành 0 và \texttt{>50K} thành 1. Nhãn được tách riêng trước khi fit mọi bộ biến đổi đầu vào. Mã hóa nhãn chỉ là quy ước biểu diễn; nó không bổ sung thông tin vào các đặc trưng. Việc chọn ngưỡng dự đoán và đánh giá chất lượng mô hình thuộc các bước thực nghiệm sau.

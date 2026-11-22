@@ -1,0 +1,49 @@
+{
+  "step": 3,
+  "method": "StratifiedGroupKFold",
+  "split_source": "frozen_manifest",
+  "config": {
+    "n_splits": 5,
+    "validation_fold": 0,
+    "random_state": 42,
+    "group_columns": [
+      "age",
+      "workclass",
+      "fnlwgt",
+      "education",
+      "education-num",
+      "marital-status",
+      "occupation",
+      "relationship",
+      "race",
+      "sex",
+      "capital-gain",
+      "capital-loss",
+      "hours-per-week",
+      "native-country"
+    ]
+  },
+  "development_rows": 32561,
+  "train_rows": 26049,
+  "validation_rows": 6512,
+  "test_rows": 16281,
+  "development_unique_groups": 32536,
+  "train_unique_groups": 26029,
+  "validation_unique_groups": 6507,
+  "train_positive_percent": 24.081538638719337,
+  "validation_positive_percent": 24.078624078624077,
+  "class_rate_difference_percentage_points": 0.0029145600952595885,
+  "conflicting_groups": 1,
+  "conflicting_group_splits": [
+    {
+      "split": "train",
+      "rows": 2,
+      "n_labels": 2
+    }
+  ],
+  "development_fingerprint": "0b62cfa1da9d87b59caa8ff6b8a53932d3b7f5cafb780f947b77c9611f0fe82f",
+  "sklearn_version_generation": "1.9.0",
+  "rows_removed": 0,
+  "model_features_exported": false,
+  "test_label_statistics_computed": false
+}

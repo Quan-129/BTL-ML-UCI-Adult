@@ -1,0 +1,11 @@
+\subsection{Ngăn ngừa rò rỉ dữ liệu}
+\label{subsec:4_2_3}
+Kiểm tra tự động xác nhận train và validation không chung chỉ số dòng và không chung nhóm đầu vào. Hai tập hợp lại chứa đủ mọi dòng của \texttt{adult.data}, mỗi dòng đúng một lần; các hồ sơ trùng hoặc khác nhãn trong cùng nhóm được giữ cùng một phía. Không xóa hoặc gán lại nhãn những hồ sơ này.
+
+Có 32.536 nhóm đầu vào trong dữ liệu phát triển, với 26.029 nhóm ở train và 6.507 nhóm ở validation. Số nhóm giao nhau là 0. Nhóm cùng đầu vào nhưng khác nhãn đã ghi nhận ở EDA cũng được kiểm tra để không bị tách sang hai phía.
+
+Tập test giữ nguyên số dòng, giá trị và thứ tự từ tệp UCI sau bước đọc dữ liệu. Test không được dùng để chọn seed, fold, quy tắc loại mẫu hoặc cấu hình tiền xử lý. Kiểm tra nhóm trong bước này tập trung vào ranh giới train/validation; chưa đối chiếu các hồ sơ phát triển với test để lọc dữ liệu.
+
+Ở bước tiếp theo, imputer, encoder, scaler và PCA chỉ được fit trên train; validation và test được biến đổi bằng các đối tượng đã fit. Nếu thực hiện cross-validation bên trong train, các nhóm phải được truyền vào bộ chia và toàn bộ tiền xử lý phải được fit lại bên trong từng fold. Khi đã chốt cấu hình cuối, có thể fit lại trên train cùng validation trước lần đánh giá test, đồng thời lưu rõ phiên bản pipeline và các đặc trưng tương ứng.
+
+EDA ở chương 3 mô tả toàn bộ dữ liệu phát triển trước khi chia nội bộ. Các thống kê dùng để fit tiền xử lý hoặc lựa chọn cấu hình phải được tính lại trên phần train tương ứng; các bảng EDA đó không được dùng làm trực tiếp các tham số biến đổi cho validation hoặc test.
