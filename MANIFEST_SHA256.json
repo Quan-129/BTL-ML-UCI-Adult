@@ -56,8 +56,8 @@
     "sha256": "8dc4ae5000b8ce770477e754235178c2f36fdf27560cd945ec09873ea8b037e6"
   },
   "configs/team.json": {
-    "bytes": 1218,
-    "sha256": "707bfc06f443ffd0e11b499b1fd7339058edbc4f671c19467bd3d476ab90fc5c"
+    "bytes": 1220,
+    "sha256": "f747e4ae95e296ca3503396f8d148ea1a647cb345039583d3ea139d29438a27e"
   },
   "data/adult.data": {
     "bytes": 3974305,
@@ -224,12 +224,12 @@
     "sha256": "d03276c4399986c79209a491e8482fb08bea623630cdf26e65ed3a9ba4cc92cb"
   },
   "modules/finalization.py": {
-    "bytes": 32945,
-    "sha256": "cf6011f787cc3217e419173e7e42b566314e32ae262ad4108cb171c7f054cceb"
+    "bytes": 32947,
+    "sha256": "60ee791908b5a0d5d18cb3f641dfa50361efa7847ad2f6932a0a4c938c5d7f6b"
   },
   "modules/pdf_renderer.py": {
-    "bytes": 26806,
-    "sha256": "64b0e3a00e3eb5675948087a603fba0b6fbab20f69172fe4ad4b84004aa603d9"
+    "bytes": 26808,
+    "sha256": "255eada4481dec9dc363444da398412f05eb66d5a466ee5dbb43240f6f3b5d66"
   },
   "modules/preprocessing.py": {
     "bytes": 36433,
@@ -252,16 +252,16 @@
     "sha256": "461fcf5c029046c6ee8f0088ce50ed77b4551822be2c4166d0368ddc091d9061"
   },
   "README.md": {
-    "bytes": 2973,
-    "sha256": "e6903d7f3f465918e2115d2d10e828ac3fa15643b50dd2dafb8c7278fc43f2a7"
+    "bytes": 2977,
+    "sha256": "87efc57b2c9c3c33f017216291a75abfdc84ba6a1f21ed8296f8c88106a258c5"
   },
   "reports/BTL_ML_Bao_Cao.pdf": {
-    "bytes": 2066782,
-    "sha256": "b49349db538362228f1c147c3c34eac026caa9d13709c4a3a13673cc56ec37b7"
+    "bytes": 609143,
+    "sha256": "e28b09251bc9a68829c767d6c92d9b39e7b91a01fd5f4341b888360ec08cfc7c"
   },
   "reports/BTL_ML_LaTeX_Final.zip": {
-    "bytes": 1487313,
-    "sha256": "38aa39df6a1eb774be92694ad0179e90ed498d4c9ab1d121838d927b5e4c58c0"
+    "bytes": 1473933,
+    "sha256": "127a396245d233ce485f76aff55003c6f33a803d234b45b38b4da8cd1473ec98"
   },
   "reports/latex/backmatter/appendix_a/A_1_chay_toan_bo_notebook_tren_google_colab.tex": {
     "bytes": 815,
@@ -288,8 +288,8 @@
     "sha256": "4ba046a98da8a1f185bb42ab5a5068c8775fa303447e495645e29c7303bd8ce8"
   },
   "reports/latex/backmatter/appendix_b/B_1_bang_phan_cong_va_ty_le_dong_gop.tex": {
-    "bytes": 1587,
-    "sha256": "c02b0184eaf2a9994b9f9b9b19b4f9f6be907582a95bbcf598a3f10bf62773db"
+    "bytes": 1591,
+    "sha256": "74cc3e09275d482f4473a8e55c4224608ecb0c14e820761bf54138bb414fa90d"
   },
   "reports/latex/backmatter/appendix_b/B_2_tien_do_thuc_hien_cua_nhom.tex": {
     "bytes": 544,
@@ -592,8 +592,8 @@
     "sha256": "63cca9df7b846a06799df5404670c4f7812bd33fca20667c74f01ae5a21fff1e"
   },
   "reports/latex/config/metadata.tex": {
-    "bytes": 599,
-    "sha256": "bd0a12260990d1b45f9c8f9ae5e0a91d7aa27de2c0669315b3f673fb2ec069c7"
+    "bytes": 601,
+    "sha256": "877d34d9ab52fafe30e2d1fb784c647d6f820cc7698c73035627abf1f7bd2e44"
   },
   "reports/latex/config/packages.tex": {
     "bytes": 377,
