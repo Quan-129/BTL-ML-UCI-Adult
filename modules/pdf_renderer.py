@@ -318,7 +318,7 @@ class Renderer:
             Spacer(1,8),Paragraph('Học kỳ 261 · Nhóm A01',self.styles['cover']),Spacer(1,22),
             Paragraph('<b>Giảng viên học phần:</b> Trương Vĩnh Lân',self.styles['cover']),Spacer(1,16),
             Paragraph('<b>Sinh viên thực hiện</b>',self.styles['cover'])]
-        for name,id in [('Hồng Chấn Phước','2352963'),('Trần Bá Minh Quân','2353015'),('Đinh Nguy Nguyệt Hà','2352286')]:
+        for name,id in [('Hồng Chấn Phước','2352963'),('Trần Bá Minh Quân','2353015'),('Đinh Ngụy Nguyệt Hà','2352286')]:
             s.append(Paragraph(name+' — '+id,self.styles['cover']))
         s += [Spacer(1,56),Paragraph('THÀNH PHỐ HỒ CHÍ MINH, THÁNG 11 NĂM 2026',self.styles['cover']),NextPageTemplate('body')]
         return s
