@@ -10,7 +10,7 @@
 |---|---|---|
 | Hồng Chấn Phước | 2352963 | phuoc.hongchan@hcmut.edu.vn |
 | Trần Bá Minh Quân | 2353015 | quan.tranbaminh12@hcmut.edu.vn |
-| Đinh Nguy Nguyệt Hà | 2352286 | ha.dinhnguy2005@hcmut.edu.vn |
+| Đinh Ngụy Nguyệt Hà | 2352286 | ha.dinhnguy2005@hcmut.edu.vn |
 
 ## Mục tiêu
 
