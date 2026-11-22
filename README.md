@@ -44,7 +44,7 @@ PDF do notebook xuất được dàn bằng ReportLab. Nguồn LaTeX sử dụng
 |---|---:|---:|
 | Hồng Chấn Phước | 33% | 100% |
 | Trần Bá Minh Quân | 34% | 100% |
-| Đinh Nguy Nguyệt Hà | 33% | 100% |
+| Đinh Ngụy Nguyệt Hà | 33% | 100% |
 
 ## Liên kết
 
